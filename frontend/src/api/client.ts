@@ -10,17 +10,39 @@ import type {
   BackendHealthResponse,
 } from '../types';
 
-const API_BASE_URL =
-  import.meta.env.VITE_API_BASE_URL ||
-  (import.meta.env.DEV
-    ? 'http://localhost:8000/api/v1'
-    : 'https://levelx-chjd.onrender.com/api/v1');
+function getApiBaseUrl(): string {
+  const envUrl = (import.meta.env.VITE_API_BASE_URL as string | undefined)?.trim();
+
+  let baseUrl = envUrl;
+  if (!baseUrl) {
+    baseUrl = import.meta.env.DEV
+      ? 'http://localhost:8000/api/v1'
+      : 'https://levelx-chjd.onrender.com/api/v1';
+  }
+
+  // Strip trailing slashes
+  baseUrl = baseUrl.replace(/\/+$/, '');
+
+  // Ensure /api/v1 path is included even if env variable only gave the root domain
+  if (!baseUrl.endsWith('/api/v1')) {
+    if (baseUrl.endsWith('/api')) {
+      baseUrl = `${baseUrl}/v1`;
+    } else {
+      baseUrl = `${baseUrl}/api/v1`;
+    }
+  }
+
+  return baseUrl;
+}
+
+const API_BASE_URL = getApiBaseUrl();
 
 async function fetchJson<T>(
   endpoint: string,
   options?: RequestInit
 ): Promise<T> {
-  const url = `${API_BASE_URL}${endpoint}`;
+  const cleanEndpoint = endpoint.startsWith('/') ? endpoint : `/${endpoint}`;
+  const url = `${API_BASE_URL}${cleanEndpoint}`;
 
   const response = await fetch(url, {
     headers: {

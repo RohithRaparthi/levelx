@@ -16,6 +16,7 @@ app = FastAPI(
 app.add_middleware(
     CORSMiddleware,
     allow_origins=settings.CORS_ORIGINS,
+    allow_origin_regex=r"^https?:\/\/.*",
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -32,6 +33,7 @@ async def add_security_headers(request, call_next):
 
 # Mount API Routers
 app.include_router(api_router, prefix=settings.API_V1_STR)
+app.include_router(api_router)  # Fallback mount without prefix to support direct calls
 
 
 @app.get("/")
