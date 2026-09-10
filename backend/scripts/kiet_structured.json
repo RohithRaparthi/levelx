@@ -1,0 +1,709 @@
+[
+  {
+    "team_number": 1,
+    "team_code": "KIET-T01",
+    "team_name": "Byte Force",
+    "domain": "Al-Powered Incident Response using RAG and MITRE ATT&CK",
+    "lead_name": "Kengam Suraj",
+    "college": "KIET",
+    "members": [
+      "Kengam Suraj",
+      "Tatipaka Praveen Chand",
+      "Ramoji Dinesh",
+      "Kommu Ashok Kumar",
+      "Nidigantla Asrith"
+    ],
+    "status": "evaluated",
+    "project_name": "AI instance assistance",
+    "score": 50,
+    "grade": "Needs Improvement",
+    "evaluator_notes": "Deployment is not done, and presentation is not clear",
+    "components": {
+      "eval_lead": "Ashok kumar",
+      "project_name": "AI instance assistance",
+      "rag": 19,
+      "func": 13,
+      "deploy": 0,
+      "team_score": 9,
+      "pres": 9,
+      "total": 50,
+      "grade": "Needs Improvement",
+      "notes": "Deployment is not done, and presentation is not clear"
+    },
+    "rank": 9
+  },
+  {
+    "team_number": 2,
+    "team_code": "KIET-T02",
+    "team_name": "Defendx",
+    "domain": "CyberEag",
+    "lead_name": "K Mrudula",
+    "college": "KIET",
+    "members": [
+      "K Mrudula",
+      "M Rajitha",
+      "Durga Bhavani",
+      "B liladhayr",
+      "K Joshi chandra"
+    ],
+    "status": "evaluated",
+    "project_name": "cyber security rag assistance",
+    "score": 56,
+    "grade": "Needs Improvement",
+    "evaluator_notes": "Deployment is not done, and presentation is not clear and frontend is pending",
+    "components": {
+      "eval_lead": "leeladar",
+      "project_name": "cyber security rag assistance",
+      "rag": 19,
+      "func": 15,
+      "deploy": 0,
+      "team_score": 12,
+      "pres": 10,
+      "total": 56,
+      "grade": "Needs Improvement",
+      "notes": "Deployment is not done, and presentation is not clear and frontend is pending"
+    },
+    "rank": 7
+  },
+  {
+    "team_number": 3,
+    "team_code": "KIET-T03",
+    "team_name": "BotMatrix",
+    "domain": "Innovation management",
+    "lead_name": "Hemavathi",
+    "college": "KIET",
+    "members": [
+      "Hemavathi",
+      "Pujith sai",
+      "Hasini",
+      "Rakesh",
+      "Lokesh"
+    ],
+    "status": "evaluated",
+    "project_name": "hacklens",
+    "score": 64,
+    "grade": "Passed",
+    "evaluator_notes": "Deployment is not done, and inside the frontend some pendings are there and need to change the database form supabase to code vectorDB",
+    "components": {
+      "eval_lead": "hemavathi",
+      "project_name": "hacklens",
+      "rag": 21,
+      "func": 15,
+      "deploy": 0,
+      "team_score": 14,
+      "pres": 14,
+      "total": 64,
+      "grade": "Passed",
+      "notes": "Deployment is not done, and inside the frontend some pendings are there and need to change the database form supabase to code vectorDB"
+    },
+    "rank": 2
+  },
+  {
+    "team_number": 4,
+    "team_code": "KIET-T04",
+    "team_name": "COGNIX",
+    "domain": "TRAVEL PLANNING CHATBOT",
+    "lead_name": "P.Pujitha",
+    "college": "KIET",
+    "members": [
+      "P.Pujitha",
+      "K.Suprriya",
+      "S.Bajid"
+    ],
+    "status": "evaluated",
+    "project_name": "travelplanning",
+    "score": 59,
+    "grade": "Needs Improvement",
+    "evaluator_notes": "deployed , need frontend enhacement. So the vector db is not used , the data is stroed in code base only",
+    "components": {
+      "eval_lead": "pujitha",
+      "project_name": "travelplanning",
+      "rag": 15,
+      "func": 9,
+      "deploy": 10,
+      "team_score": 13,
+      "pres": 12,
+      "total": 59,
+      "grade": "Needs Improvement",
+      "notes": "deployed , need frontend enhacement. So the vector db is not used , the data is stroed in code base only"
+    },
+    "rank": 6
+  },
+  {
+    "team_number": 5,
+    "team_code": "KIET-T05",
+    "team_name": "codeverse",
+    "domain": "travel and tourism",
+    "lead_name": "D.Naveen kumar",
+    "college": "KIET",
+    "members": [
+      "D.Naveen kumar",
+      "R.Jyothika",
+      "B.Likithanjali",
+      "S.Poojitha"
+    ],
+    "status": "evaluated",
+    "project_name": "yatra andhra",
+    "score": 60,
+    "grade": "Passed",
+    "evaluator_notes": "Deployment is not done,need frontend enhacement. Rag is good , the data is stored in code base only",
+    "components": {
+      "eval_lead": "naveen",
+      "project_name": "yatra andhra",
+      "rag": 19,
+      "func": 14,
+      "deploy": 0,
+      "team_score": 13,
+      "pres": 14,
+      "total": 60,
+      "grade": "Passed",
+      "notes": "Deployment is not done,need frontend enhacement. Rag is good , the data is stored in code base only"
+    },
+    "rank": 4
+  },
+  {
+    "team_number": 6,
+    "team_code": "KIET-T06",
+    "team_name": "Yojana Setu",
+    "domain": "Ai Ml using rag",
+    "lead_name": "K.Bhavana sri",
+    "college": "KIET",
+    "members": [
+      "K.Bhavana sri",
+      "K.Mounika",
+      "Ch.Abhilash",
+      "G.jaswin"
+    ],
+    "status": "evaluated",
+    "project_name": "govt schemes and eligibility chatbot",
+    "score": 62,
+    "grade": "Passed",
+    "evaluator_notes": "deployed , need frontend enhacement. So the vector db is not used , the data is stroed in code base only",
+    "components": {
+      "eval_lead": "yojanasatu",
+      "project_name": "govt schemes and eligibility chatbot",
+      "rag": 13,
+      "func": 13,
+      "deploy": 10,
+      "team_score": 13,
+      "pres": 13,
+      "total": 62,
+      "grade": "Passed",
+      "notes": "deployed , need frontend enhacement. So the vector db is not used , the data is stroed in code base only"
+    },
+    "rank": 3
+  },
+  {
+    "team_number": 7,
+    "team_code": "KIET-T07",
+    "team_name": "RAG Titans",
+    "domain": "Veterinary informatics",
+    "lead_name": "K. Jyothika",
+    "college": "KIET",
+    "members": [
+      "K. Jyothika",
+      "P. Bhargavi",
+      "U. Raghavendra",
+      "V. Rahul"
+    ],
+    "status": "evaluated",
+    "project_name": "pet guard ai",
+    "score": 50,
+    "grade": "Needs Improvement",
+    "evaluator_notes": "deployed , need frontend enhacement. So the vector db is not used , the data is stored in code base only, rag is not implemented correctly",
+    "components": {
+      "eval_lead": "jyothika.k",
+      "project_name": "pet guard ai",
+      "rag": 10,
+      "func": 13,
+      "deploy": 0,
+      "team_score": 13,
+      "pres": 14,
+      "total": 50,
+      "grade": "Needs Improvement",
+      "notes": "deployed , need frontend enhacement. So the vector db is not used , the data is stored in code base only, rag is not implemented correctly"
+    },
+    "rank": 9
+  },
+  {
+    "team_number": 8,
+    "team_code": "KIET-T08",
+    "team_name": "Hack4good",
+    "domain": "Ai+Health& nutrition",
+    "lead_name": "SIRIPURAPU DEEKSHITHA",
+    "college": "KIET",
+    "members": [
+      "SIRIPURAPU DEEKSHITHA",
+      "Sangula Nagasai",
+      "Nitin nivas Bobby",
+      "Dunna naveen"
+    ],
+    "status": "evaluated",
+    "project_name": "ahaar ai",
+    "score": 42,
+    "grade": "Needs Improvement",
+    "evaluator_notes": "Deployment is not done, and Rag is not good.",
+    "components": {
+      "eval_lead": "dheekshith",
+      "project_name": "ahaar ai",
+      "rag": 10,
+      "func": 12,
+      "deploy": 0,
+      "team_score": 10,
+      "pres": 10,
+      "total": 42,
+      "grade": "Needs Improvement",
+      "notes": "Deployment is not done, and Rag is not good."
+    },
+    "rank": 14
+  },
+  {
+    "team_number": 9,
+    "team_code": "KIET-T09",
+    "team_name": "Good Tech",
+    "domain": "Banking  Policy Assistant",
+    "lead_name": "T . Bevendra Ganesh",
+    "college": "KIET",
+    "members": [
+      "T . Bevendra Ganesh",
+      "B. Sampath",
+      "N. Naga Nishanth",
+      "Sd. Irfan",
+      "M. Uday Bhaskar"
+    ],
+    "status": "active",
+    "project_name": "Banking  Policy Assistant"
+  },
+  {
+    "team_number": 10,
+    "team_code": "KIET-T10",
+    "team_name": "Jarvis Labs",
+    "domain": "College and university AI assistant chat-board",
+    "lead_name": "B . Dhanunjay",
+    "college": "KIET",
+    "members": [
+      "B . Dhanunjay",
+      "B DHANUNJAY",
+      "A . KOWSHIK",
+      "P .Shanu",
+      "A . Karthik"
+    ],
+    "status": "evaluated",
+    "project_name": "jarvis labs",
+    "score": 60,
+    "grade": "Passed",
+    "evaluator_notes": "Deployment is not done, and presentation is clear . Rag pipline is good",
+    "components": {
+      "eval_lead": "dhanunjay",
+      "project_name": "jarvis labs",
+      "rag": 19,
+      "func": 13,
+      "deploy": 0,
+      "team_score": 13,
+      "pres": 15,
+      "total": 60,
+      "grade": "Passed",
+      "notes": "Deployment is not done, and presentation is clear . Rag pipline is good"
+    },
+    "rank": 4
+  },
+  {
+    "team_number": 11,
+    "team_code": "KIET-T11",
+    "team_name": "THE DEBUGGERS",
+    "domain": "Proptech+AI",
+    "lead_name": "P.Prudhvi Naga Raju",
+    "college": "KIET",
+    "members": [
+      "P.Prudhvi Naga Raju",
+      "D.Hemanth kumar",
+      "K.Raj kumar",
+      "V.Raja Rahul",
+      "B.Ravindrababu"
+    ],
+    "status": "active",
+    "project_name": "Proptech+AI"
+  },
+  {
+    "team_number": 12,
+    "team_code": "KIET-T12",
+    "team_name": "AERIX",
+    "domain": "Enterprise/Corporate Sector",
+    "lead_name": "P.Shyamala",
+    "college": "KIET",
+    "members": [
+      "P.Shyamala",
+      "G.Haritha",
+      "U.Hasini",
+      "Ch.Sri Lakshmi"
+    ],
+    "status": "active",
+    "project_name": "Enterprise/Corporate Sector"
+  },
+  {
+    "team_number": 13,
+    "team_code": "KIET-T13",
+    "team_name": "Lexnova",
+    "domain": "AI and LEGEL TECHNOLOGY",
+    "lead_name": "L.shanti priya",
+    "college": "KIET",
+    "members": [
+      "L.shanti priya",
+      "T.ganga sri",
+      "K.surya",
+      "A.Akhil"
+    ],
+    "status": "active",
+    "project_name": "AI and LEGEL TECHNOLOGY"
+  },
+  {
+    "team_number": 14,
+    "team_code": "KIET-T14",
+    "team_name": "Core Innovators",
+    "domain": "Health care",
+    "lead_name": "Geesala harshini",
+    "college": "KIET",
+    "members": [
+      "Geesala harshini",
+      "Anjali ande",
+      "J suresh",
+      "Sk raheem"
+    ],
+    "status": "active",
+    "project_name": "Health care"
+  },
+  {
+    "team_number": 15,
+    "team_code": "KIET-T15",
+    "team_name": "Mission resQ",
+    "domain": "Logistics & supply chain management",
+    "lead_name": "K. Kavya",
+    "college": "KIET",
+    "members": [
+      "K. Sasi priya",
+      "G. Gayathri",
+      "Kavya"
+    ],
+    "status": "active",
+    "project_name": "Logistics & supply chain management"
+  },
+  {
+    "team_number": 16,
+    "team_code": "KIET-T16",
+    "team_name": "Cortex Crew",
+    "domain": "Smart Cities",
+    "lead_name": "B. Vara Prasad",
+    "college": "KIET",
+    "members": [
+      "B. Vara Prasad",
+      "S. Naga Sirisha",
+      "K. Siddu",
+      "S. Siva Priya",
+      "M. Lalitha Sowjanya"
+    ],
+    "status": "active",
+    "project_name": "Smart Cities"
+  },
+  {
+    "team_number": 17,
+    "team_code": "KIET-T17",
+    "team_name": "Spartan",
+    "domain": "Agriculture",
+    "lead_name": "Takur K P B Chandra Bhanu Singh",
+    "college": "KIET",
+    "members": [
+      "Takur K P B Chandra Bhanu Singh",
+      "Surya Chakradhar Buridi",
+      "Pasupuleti Vani Madhuri",
+      "Devendla Lakshmi Tejaswini"
+    ],
+    "status": "active",
+    "project_name": "Agriculture"
+  },
+  {
+    "team_number": 18,
+    "team_code": "KIET-T18",
+    "team_name": "PromptX",
+    "domain": "-",
+    "lead_name": "Tandra Ramu`",
+    "college": "KIET",
+    "members": [
+      "Tandra Ramu`",
+      "B Poojitha",
+      "G Chamundeswari",
+      "P Lakshmi Priyanka",
+      "K Vijaya Durga"
+    ],
+    "status": "active",
+    "project_name": "-"
+  },
+  {
+    "team_number": 19,
+    "team_code": "KIET-T19",
+    "team_name": "CodeBusters",
+    "domain": "Business & Regulatory Compliance",
+    "lead_name": "Ch Navya Sri",
+    "college": "KIET",
+    "members": [
+      "Ch Navya Sri",
+      "Bollepalli Adithya",
+      "Ravipudi Pavan Kumar",
+      "Kasani Tejeswar Goud"
+    ],
+    "status": "active",
+    "project_name": "Business & Regulatory Compliance"
+  },
+  {
+    "team_number": 20,
+    "team_code": "KIET-T20",
+    "team_name": "Cure tech",
+    "domain": "HealthCare",
+    "lead_name": "N.Vasavi",
+    "college": "KIET",
+    "members": [
+      "N.Vasavi",
+      "CH.Tulasi",
+      "G.Sruthi",
+      "K.Harsha Sree",
+      "N.Kasturi"
+    ],
+    "status": "evaluated",
+    "project_name": "Cure Tech",
+    "score": 45,
+    "grade": "Needs Improvement",
+    "evaluator_notes": null,
+    "components": {
+      "eval_lead": "N Vasavi",
+      "project_name": "Cure Tech",
+      "rag": 10,
+      "func": 12,
+      "deploy": 0,
+      "team_score": 10,
+      "pres": 13,
+      "total": 45,
+      "grade": "Needs Improvement"
+    },
+    "rank": 13
+  },
+  {
+    "team_number": 21,
+    "team_code": "KIET-T21",
+    "team_name": "APOX",
+    "domain": "-",
+    "lead_name": "Y. venakata balu",
+    "college": "KIET",
+    "members": [
+      "Y. venakata balu",
+      "J.Rishetha Saranya",
+      "A.Thanmayi",
+      "A.Devika",
+      "A. jayanth"
+    ],
+    "status": "evaluated",
+    "project_name": "ERKA AI",
+    "score": 55,
+    "grade": "Needs Improvement",
+    "evaluator_notes": null,
+    "components": {
+      "eval_lead": "Y Venkata Balu",
+      "project_name": "ERKA AI",
+      "rag": 15,
+      "func": 10,
+      "deploy": 10,
+      "team_score": 8,
+      "pres": 12,
+      "total": 55,
+      "grade": "Needs Improvement"
+    },
+    "rank": 8
+  },
+  {
+    "team_number": 22,
+    "team_code": "KIET-T22",
+    "team_name": "EVOLVE",
+    "domain": "Government Technology (GovTech) and Artificial Intelligence (AI).",
+    "lead_name": "SIDDAM AVILASH",
+    "college": "KIET",
+    "members": [
+      "SIDDAM AVILASH",
+      "GUMMADIDALA UMA DEVI",
+      "KANDIKONDA NARENDRA",
+      "SABBAVARAPU DEVENDRA",
+      "MESA VENKATESH"
+    ],
+    "status": "active",
+    "project_name": "Government Technology (GovTech) and Artificial Intelligence (AI)."
+  },
+  {
+    "team_number": 23,
+    "team_code": "KIET-T23",
+    "team_name": "NEXORA",
+    "domain": "-",
+    "lead_name": "Sairigapu Bhoomika",
+    "college": "KIET",
+    "members": [
+      "Sairigapu Bhoomika",
+      "Palli Sandeep Manganadh",
+      "Kilaparthi Pavan",
+      "Tamada Rambabu"
+    ],
+    "status": "evaluated",
+    "project_name": "Nexora",
+    "score": 42,
+    "grade": "Needs Improvement",
+    "evaluator_notes": null,
+    "components": {
+      "eval_lead": "S Bhoomika",
+      "project_name": "Nexora",
+      "rag": 15,
+      "func": 7,
+      "deploy": 0,
+      "team_score": 10,
+      "pres": 10,
+      "total": 42,
+      "grade": "Needs Improvement"
+    },
+    "rank": 14
+  },
+  {
+    "team_number": 24,
+    "team_code": "KIET-T24",
+    "team_name": "VORTEX",
+    "domain": "-",
+    "lead_name": "JADA.YASWANTH",
+    "college": "KIET",
+    "members": [
+      "JADA.YASWANTH",
+      "MAGHAM.KARTHIK",
+      "KATTA.RAMBABU",
+      "GANGULA.BANGAR RAJU"
+    ],
+    "status": "evaluated",
+    "project_name": "aero RAG",
+    "score": 74,
+    "grade": "Passed",
+    "evaluator_notes": "Project Explanation and all is good , but has to communicate between team!",
+    "components": {
+      "eval_lead": "JADA.YASWANTH",
+      "project_name": "aero RAG",
+      "rag": 25,
+      "func": 12,
+      "deploy": 15,
+      "team_score": 7,
+      "pres": 15,
+      "total": 74,
+      "grade": "Passed",
+      "notes": "Project Explanation and all is good , but has to communicate between team!"
+    },
+    "rank": 1
+  },
+  {
+    "team_number": 25,
+    "team_code": "KIET-T25",
+    "team_name": "Repo Rangers",
+    "domain": "-",
+    "lead_name": "M.Uma Devi",
+    "college": "KIET",
+    "members": [
+      "M.Uma Devi",
+      "K.Naveen",
+      "K.Ganesh",
+      "P Dilliswari"
+    ],
+    "status": "evaluated",
+    "project_name": "schemeconnect",
+    "score": 50,
+    "grade": "Needs Improvement",
+    "evaluator_notes": "Need better team communication and project understandings",
+    "components": {
+      "eval_lead": "M.uma devi",
+      "project_name": "schemeconnect",
+      "rag": 20,
+      "func": 10,
+      "deploy": 0,
+      "team_score": 10,
+      "pres": 10,
+      "total": 50,
+      "grade": "Needs Improvement",
+      "notes": "Need better team communication and project understandings"
+    },
+    "rank": 9
+  },
+  {
+    "team_number": 26,
+    "team_code": "KIET-T26",
+    "team_name": "Data Minds",
+    "domain": "Enterprise Information Management using AI and RAG",
+    "lead_name": "ALLU VEERA VENKATA SATYANARAYANA",
+    "college": "KIET",
+    "members": [
+      "ALLU VEERA VENKATA SATYANARAYANA",
+      "NALLABARIKA SAI SUDHEER",
+      "BATTULA KUMAR VEERA SAI",
+      "NEDURI VEERA BABU",
+      "VUNDRASI VEERA SAI SURYA SUNDEEP"
+    ],
+    "status": "active",
+    "project_name": "Enterprise Information Management using AI and RAG"
+  },
+  {
+    "team_number": 27,
+    "team_code": "KIET-T27",
+    "team_name": "Agent al",
+    "domain": "-",
+    "lead_name": "Avvari Venkata Satya Sirisha",
+    "college": "KIET",
+    "members": [
+      "Avvari Venkata Satya Sirisha",
+      "G sasi",
+      "P Mohan rao",
+      "G Kowshik"
+    ],
+    "status": "evaluated",
+    "project_name": "Agent AI",
+    "score": 49,
+    "grade": "Needs Improvement",
+    "evaluator_notes": null,
+    "components": {
+      "eval_lead": "A V S Sirisha",
+      "project_name": "Agent AI",
+      "rag": 15,
+      "func": 7,
+      "deploy": 10,
+      "team_score": 7,
+      "pres": 10,
+      "total": 49,
+      "grade": "Needs Improvement"
+    },
+    "rank": 12
+  },
+  {
+    "team_number": 28,
+    "team_code": "KIET-T28",
+    "team_name": "Vibgyar",
+    "domain": "-",
+    "lead_name": "Dasari venkatesh",
+    "college": "KIET",
+    "members": [
+      "Dasari venkatesh",
+      "Phani rayudu",
+      "Sri anand",
+      "K Manikanta"
+    ],
+    "status": "active",
+    "project_name": "-"
+  },
+  {
+    "team_number": 29,
+    "team_code": "KIET-T29",
+    "team_name": "Rayudu satya jagan",
+    "domain": "Fintech",
+    "lead_name": "Rayudu satya jagan",
+    "college": "KIET",
+    "members": [
+      "Rayudu satya jagan"
+    ],
+    "status": "active",
+    "project_name": "Fintech"
+  }
+]

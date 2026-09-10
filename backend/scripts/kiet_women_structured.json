@@ -1,0 +1,1550 @@
+[
+  {
+    "dept": "AID H",
+    "team_number": 1,
+    "team_name": "NexTech",
+    "team_code": "AIDH-T01",
+    "lead_name": "J Akshaya",
+    "project_name": "Civic Resolve",
+    "domain": null,
+    "problem_statement": null,
+    "college": "KIET Women",
+    "status": "evaluated",
+    "score": 70,
+    "grade": "Passed",
+    "components": {
+      "rag": 18,
+      "func": 15,
+      "deploy": 10,
+      "team": 12,
+      "pres": 15,
+      "total": 70,
+      "grade": "Passed"
+    },
+    "members": [
+      {
+        "name": "A.Soniya",
+        "roll_no": "24JN1A4501",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "Ch.Ramya Sri",
+        "roll_no": "24JN1A4502",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "K.Hima Sri",
+        "roll_no": "24JN1A4503",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "P.Naga Jyothi",
+        "roll_no": "24JN1A4504",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "J.Akshaya",
+        "roll_no": "24JN1A4505",
+        "is_lead": false,
+        "college": "KIET Women"
+      }
+    ],
+    "rank": 5
+  },
+  {
+    "dept": "AID H",
+    "team_number": 2,
+    "team_name": "Data Dynamos",
+    "team_code": "AIDH-T02",
+    "lead_name": "B.purnima",
+    "project_name": "AI Smart TV Guide",
+    "domain": "AI",
+    "problem_statement": "Smart TV manuals are lengthy and difficult to search. DeviceRAG uses AI and RAG to quickly provide accurate, simple, step-by-step answers from official TV manuals.",
+    "college": "KIET Women",
+    "status": "evaluated",
+    "score": 69,
+    "grade": "Passed",
+    "components": {
+      "rag": 15,
+      "func": 18,
+      "deploy": 10,
+      "team": 12,
+      "pres": 14,
+      "total": 69,
+      "grade": "Passed"
+    },
+    "members": [
+      {
+        "name": "B.purnima",
+        "roll_no": "24JN1A4506",
+        "is_lead": true,
+        "college": "KIET Women"
+      },
+      {
+        "name": "B.tejasri",
+        "roll_no": "24JN1A4507",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "ch.jyothsna",
+        "roll_no": "24JN1A4508",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "k.anusha",
+        "roll_no": "24JN1A4509",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "B.sai mani Deepthi",
+        "roll_no": "24JN1A4510",
+        "is_lead": false,
+        "college": "KIET Women"
+      }
+    ],
+    "rank": 8
+  },
+  {
+    "dept": "AID H",
+    "team_number": 3,
+    "team_name": "Ancient Scriptures",
+    "team_code": "AIDH-T03",
+    "lead_name": "K. Harshitha",
+    "project_name": "Divine AI",
+    "domain": "AI-Powered Spiritual & Religious Knowledge",
+    "problem_statement": "Religious and spiritual knowledge is scattered across different scriptures, books, and online sources, making it difficult to explore and understand.\nOur Devotional AI uses RAG to provide accurate, source-based and multilingual answers about religious stories, teachings, and traditions.",
+    "college": "KIET Women",
+    "status": "evaluated",
+    "score": 57,
+    "grade": "Needs Improvement",
+    "components": {
+      "rag": 10,
+      "func": 10,
+      "deploy": 10,
+      "team": 12,
+      "pres": 15,
+      "total": 57,
+      "grade": "Needs Improvement"
+    },
+    "members": [
+      {
+        "name": "K. Harshitha",
+        "roll_no": "24JN1A4511",
+        "is_lead": true,
+        "college": "KIET Women"
+      },
+      {
+        "name": "S. Siri Bhuvaneshwari",
+        "roll_no": "24JN1A4513",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "B.Jameela Begum",
+        "roll_no": "24JN1A4514",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "P. Ramya Sri",
+        "roll_no": "25JN1A4502",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "M. Hari Priya Lakshmi",
+        "roll_no": "25JN1A4503",
+        "is_lead": false,
+        "college": "KIET Women"
+      }
+    ],
+    "rank": 15
+  },
+  {
+    "dept": "AID H",
+    "team_number": 4,
+    "team_name": "Technova",
+    "team_code": "AIDH-T04",
+    "lead_name": "S.Devisri",
+    "project_name": "Government Schema Discovery & Eligibility Assistant",
+    "domain": "Government Schemas &Citizen Welfare",
+    "problem_statement": "Government schemes, scholarships, welfare programs and financial assistance information is scattered across multiple official documents and portals. Citizens often struggle to identify relevant schemes, understand eligibility criteria, required documents, benefits, and application procedures.\n\nBuild an AI-powered RAG chatbot that retrieves information from official government scheme documents and provides personalized, source-grounded guidance to citizen",
+    "college": "KIET Women",
+    "status": "evaluated",
+    "score": 59,
+    "grade": "Needs Improvement",
+    "components": {
+      "rag": 15,
+      "func": 12,
+      "deploy": 12,
+      "team": 10,
+      "pres": 10,
+      "total": 59,
+      "grade": "Needs Improvement"
+    },
+    "members": [
+      {
+        "name": "S.Devi sri",
+        "roll_no": "24JN1A4520",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "M.asha Jyothi",
+        "roll_no": "24JN1A4518",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "D.purna",
+        "roll_no": "24JN1A4519",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "N.varshitha",
+        "roll_no": "24JN1A4516",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "Ch.Amrutha",
+        "roll_no": "24JN1A4517",
+        "is_lead": false,
+        "college": "KIET Women"
+      }
+    ],
+    "rank": 12
+  },
+  {
+    "dept": "AID H",
+    "team_number": 5,
+    "team_name": "Tech Titans",
+    "team_code": "AIDH-T05",
+    "lead_name": "k.Geethika",
+    "project_name": "Nexus RAG",
+    "domain": "Industry sector",
+    "problem_statement": "NexusRAG is an AI-powered enterprise copilot that uses advanced RAG to deliver accurate, context-aware answers from multiple documents with reliable source citations.",
+    "college": "KIET Women",
+    "status": "evaluated",
+    "score": 64,
+    "grade": "Passed",
+    "components": {
+      "rag": 15,
+      "func": 14,
+      "deploy": 15,
+      "team": 10,
+      "pres": 10,
+      "total": 64,
+      "grade": "Passed"
+    },
+    "members": [
+      {
+        "name": "k.Geethika",
+        "roll_no": "24JN1A4525",
+        "is_lead": true,
+        "college": "KIET Women"
+      },
+      {
+        "name": "N.Kusuma",
+        "roll_no": "24JN1A4521",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "vijaya Jyothi",
+        "roll_no": "24JN1A4522",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "D.Pavani",
+        "roll_no": "24JN1A4523",
+        "is_lead": false,
+        "college": "KIET Women"
+      }
+    ],
+    "rank": 11
+  },
+  {
+    "dept": "AID H",
+    "team_number": 6,
+    "team_name": "Nayaatech",
+    "team_code": "AIDH-T06",
+    "lead_name": "G Akshitha Reddy",
+    "project_name": "NyayaMitra AI",
+    "domain": "legaltech",
+    "problem_statement": "People often approach lawyers without understanding the relevant laws, sections, or their basic rights, making it difficult to understand their legal situation. NyayaAI uses RAG to provide a reliable, easy-to-understand preliminary legal overview from relevant legal sources before consulting a lawyer.",
+    "college": "KIET Women",
+    "status": "evaluated",
+    "score": 43,
+    "grade": "Needs Improvement",
+    "components": {
+      "rag": 10,
+      "func": 10,
+      "deploy": 0,
+      "team": 10,
+      "pres": 13,
+      "total": 43,
+      "grade": "Needs Improvement"
+    },
+    "members": [
+      {
+        "name": "G Akshitha Reddy",
+        "roll_no": "24JN1A4528",
+        "is_lead": true,
+        "college": "KIET Women"
+      },
+      {
+        "name": "N Mounika",
+        "roll_no": "24JN1A4526",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "K Siri",
+        "roll_no": "24JN1A4530",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "T Sukanya",
+        "roll_no": "24JN1A4527",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "K.Nandini",
+        "roll_no": "24JN1A4529",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "G Ranjitha",
+        "roll_no": "25JN5A4501",
+        "is_lead": false,
+        "college": "KIET Women"
+      }
+    ],
+    "rank": 26
+  },
+  {
+    "dept": "AID H",
+    "team_number": 7,
+    "team_name": "Agrinova",
+    "team_code": "AIDH-T07",
+    "lead_name": "R Divya sri",
+    "project_name": "Agrimind",
+    "domain": "Agricultural sector",
+    "problem_statement": "Farmers often need quick and simple information about crops, soil, fertilizers, and diseases.",
+    "college": "KIET Women",
+    "status": "evaluated",
+    "score": 59,
+    "grade": "Needs Improvement",
+    "components": {
+      "rag": 15,
+      "func": 15,
+      "deploy": 10,
+      "team": 8,
+      "pres": 11,
+      "total": 59,
+      "grade": "Needs Improvement"
+    },
+    "members": [
+      {
+        "name": "R Divya sri",
+        "roll_no": "24JN1A4534",
+        "is_lead": true,
+        "college": "KIET Women"
+      },
+      {
+        "name": "D Devika",
+        "roll_no": "24JN1A4532",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "D JLNS Durga",
+        "roll_no": "24JN1A4535",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "B Devayani",
+        "roll_no": "24JN1A45B2",
+        "is_lead": false,
+        "college": "KIET Women"
+      }
+    ],
+    "rank": 12
+  },
+  {
+    "dept": "AID H",
+    "team_number": 8,
+    "team_name": "Terra tech",
+    "team_code": "AIDH-T08",
+    "lead_name": "B Kundhana Gowri",
+    "project_name": "travel fraud ai-travel safety & planning",
+    "domain": "Travel sector",
+    "problem_statement": null,
+    "college": "KIET Women",
+    "status": "evaluated",
+    "score": 54,
+    "grade": "Needs Improvement",
+    "components": {
+      "rag": 10,
+      "func": 14,
+      "deploy": 10,
+      "team": 10,
+      "pres": 10,
+      "total": 54,
+      "grade": "Needs Improvement"
+    },
+    "members": [
+      {
+        "name": "B Kundhana Gowri",
+        "roll_no": "24JN1A4536",
+        "is_lead": true,
+        "college": "KIET Women"
+      },
+      {
+        "name": "E sarika",
+        "roll_no": "24JN1A4539",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "K.Navya sri",
+        "roll_no": "24JN1A4540",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "D.vijaya",
+        "roll_no": "24JN1A4543",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "Ch .joshitha",
+        "roll_no": "24JN1A4544",
+        "is_lead": false,
+        "college": "KIET Women"
+      }
+    ],
+    "rank": 17
+  },
+  {
+    "dept": "AID H",
+    "team_number": 9,
+    "team_name": "Techora",
+    "team_code": "AIDH-T09",
+    "lead_name": "R.Drakshayani",
+    "project_name": "Cargo Route AI",
+    "domain": "logistic & supply chain",
+    "problem_statement": "CargoRule AI is a RAG-powered chatbot that helps users understand cargo shipping rules, required documents, restrictions, and compliance requirements using trusted regulatory documents.",
+    "college": "KIET Women",
+    "status": "evaluated",
+    "score": 58,
+    "grade": "Needs Improvement",
+    "components": {
+      "rag": 15,
+      "func": 13,
+      "deploy": 10,
+      "team": 10,
+      "pres": 10,
+      "total": 58,
+      "grade": "Needs Improvement"
+    },
+    "members": [
+      {
+        "name": "R.Drakshayani",
+        "roll_no": "24JN1A4547",
+        "is_lead": true,
+        "college": "KIET Women"
+      },
+      {
+        "name": "N.Prasanna",
+        "roll_no": "24JN1A4548",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "Ch.Adhi lakshmi",
+        "roll_no": "24JN1A4545",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "J.Bhavani",
+        "roll_no": "24JN1A45B5",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "G.Devika",
+        "roll_no": "24JN1A4546",
+        "is_lead": false,
+        "college": "KIET Women"
+      }
+    ],
+    "rank": 14
+  },
+  {
+    "dept": "AID H",
+    "team_number": 10,
+    "team_name": "AID H - Team 10",
+    "team_code": "AIDH-T10",
+    "lead_name": "M Yasaswini",
+    "project_name": "Codebase QA Bot",
+    "domain": "Ai for Software Develpoment",
+    "problem_statement": "Aims for the Large codebases to be easy for understanding the project built by a person through vibe coding",
+    "college": "KIET Women",
+    "status": "evaluated",
+    "score": 36,
+    "grade": "Needs Improvement",
+    "components": {
+      "rag": 5,
+      "func": 10,
+      "deploy": 5,
+      "team": 8,
+      "pres": 8,
+      "total": 36,
+      "grade": "Needs Improvement"
+    },
+    "members": [
+      {
+        "name": "M Yasaswini",
+        "roll_no": "24JN1A4549",
+        "is_lead": true,
+        "college": "KIET Women"
+      },
+      {
+        "name": "P Alekhya",
+        "roll_no": "24JN1A4550",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "A Sai Nitisha",
+        "roll_no": "24JN1A4551",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "N Meghana",
+        "roll_no": "24JN1A4552",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "G Vijayalakshmi",
+        "roll_no": "24JN1A4553",
+        "is_lead": false,
+        "college": "KIET Women"
+      }
+    ],
+    "rank": 28
+  },
+  {
+    "dept": "CSM H",
+    "team_number": 1,
+    "team_name": "RAGNOVA",
+    "team_code": "CSMH-T01",
+    "lead_name": "P. Lakshmi Saranya",
+    "project_name": "financial policy and tax assistance",
+    "domain": "Artificial Intelligence and Machine Learning \u2013 FinTech / Financial Inclusion / Policy Decision Support",
+    "problem_statement": "\u201cAn AI-based assistant for analyzing financial inclusion and recommending effective financial policies in India.\u201d",
+    "college": "KIET Women",
+    "status": "evaluated",
+    "score": 57,
+    "grade": "Needs Improvement",
+    "evaluator_notes": null,
+    "members": [
+      {
+        "name": "P. Lakshmi Saranya",
+        "roll_no": "24JN1A4201",
+        "is_lead": true,
+        "college": "KIET Women"
+      },
+      {
+        "name": "k. sai keerthi",
+        "roll_no": "24JN1A4205",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "B. Likitha",
+        "roll_no": "24JN1A4202",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "L. Chandini",
+        "roll_no": "24JN1A4204",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "A. Teja sri",
+        "roll_no": "25JN5A4201",
+        "is_lead": false,
+        "college": "KIET Women"
+      }
+    ],
+    "rank": 15
+  },
+  {
+    "dept": "CSM H",
+    "team_number": 2,
+    "team_name": "RAGMIND",
+    "team_code": "CSMH-T02",
+    "lead_name": "T D A pavani",
+    "project_name": "university assistant",
+    "domain": "Artificial intelligence (AI)&natural language processing (NLP)",
+    "problem_statement": "University Assistant helps students quickly get accurate information about admissions, courses, exams, scholarships, and university rules.",
+    "college": "KIET Women",
+    "status": "evaluated",
+    "score": 78,
+    "grade": "Top Performer",
+    "evaluator_notes": null,
+    "members": [
+      {
+        "name": "T D A pavani",
+        "roll_no": "24JN1A4206",
+        "is_lead": true,
+        "college": "KIET Women"
+      },
+      {
+        "name": "A.Gayathri",
+        "roll_no": "24JN1A4207",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "R.Sindhu Sri",
+        "roll_no": "24JN1A4209",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "P.Revathi",
+        "roll_no": "24JN1A4208",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "K.Vishalya",
+        "roll_no": "24JN1A4210",
+        "is_lead": false,
+        "college": "KIET Women"
+      }
+    ],
+    "rank": 1
+  },
+  {
+    "dept": "CSM H",
+    "team_number": 3,
+    "team_name": "SmritiX",
+    "team_code": "CSMH-T03",
+    "lead_name": "K.Divya sri",
+    "project_name": "BidLens",
+    "domain": "Tender & Procurement Intelligence",
+    "problem_statement": "Tender/RFP Requirement RAG\nProblem:Organizations often receive large and complex Tender/RFP documents containing hundreds of pages of eligibility criteria, technical requirements, submission guidelines, deadlines, evaluation criteria, and contractual conditions. Manually reviewing these documents is time-consuming and can lead to missing important requirements or making incorrect interpretations. Therefore, there is a need for a RAG-based system that can retrieve relevant information from Tender/RFP documents and provide accurate, document-grounded answers to users' queries, helping them quickly understand and identify the required tender/RFP requirements.",
+    "college": "KIET Women",
+    "status": "evaluated",
+    "score": 71,
+    "grade": "Passed",
+    "evaluator_notes": null,
+    "members": [
+      {
+        "name": "K.Divya sri",
+        "roll_no": "24JN1A4215",
+        "is_lead": true,
+        "college": "KIET Women"
+      },
+      {
+        "name": "K.Bhavani",
+        "roll_no": "24JN1A4213",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "G.Hema",
+        "roll_no": "24JN1A4214",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "N.Pujitha",
+        "roll_no": "24JN1A4212",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "T.Anushka",
+        "roll_no": "25JN5A4203",
+        "is_lead": false,
+        "college": "KIET Women"
+      }
+    ],
+    "rank": 4
+  },
+  {
+    "dept": "CSM H",
+    "team_number": 4,
+    "team_name": "secret chambers",
+    "team_code": "CSMH-T04",
+    "lead_name": "P.Ramya",
+    "project_name": "AI STUDYMATE",
+    "domain": "Artificial intelligence",
+    "problem_statement": "Students and learners often need to search through multiple textbooks, lecture notes, PDFs, and study materials to find accurate answers to their academic questions. Traditional search systems mainly depend on keyword matching and may return irrelevant information, requiring students to manually read large documents to find the required answer.",
+    "college": "KIET Women",
+    "status": "disqualified",
+    "score": null,
+    "grade": null,
+    "evaluator_notes": "Disqualified this team",
+    "members": [
+      {
+        "name": "P.Ramya",
+        "roll_no": "24JN1A4218",
+        "is_lead": true,
+        "college": "KIET Women"
+      },
+      {
+        "name": "P Bhavya",
+        "roll_no": "24JN1A4216",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "P Nandini Reddy",
+        "roll_no": "24JN1A4217",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "R Nagamani",
+        "roll_no": "24JN1A4219",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "R Tulasi",
+        "roll_no": "24JN1A4221",
+        "is_lead": false,
+        "college": "KIET Women"
+      }
+    ]
+  },
+  {
+    "dept": "CSM H",
+    "team_number": 5,
+    "team_name": "knownexa",
+    "team_code": "CSMH-T05",
+    "lead_name": "R.Jaswitha",
+    "project_name": "Enterprise knowledge base Q&A chatbot",
+    "domain": "AI&NLP",
+    "problem_statement": "Enterprise Knowledge Base Q&A Chatbot. This system is split into two phases: the Data Ingestion Pipeline (pre-processing data) and the Retrieval & Inference Loop (handling the user's question).",
+    "college": "KIET Women",
+    "status": "disqualified",
+    "score": null,
+    "grade": null,
+    "evaluator_notes": "Disqualified this team",
+    "members": [
+      {
+        "name": "R.Jaswitha",
+        "roll_no": "24JN1A4222",
+        "is_lead": true,
+        "college": "KIET Women"
+      },
+      {
+        "name": "I.Nikita",
+        "roll_no": "24JN1A4224",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "R.kavya",
+        "roll_no": "24JN1A4226",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "K.Triveni",
+        "roll_no": "24JN1A4225",
+        "is_lead": false,
+        "college": "KIET Women"
+      }
+    ]
+  },
+  {
+    "dept": "CSM H",
+    "team_number": 6,
+    "team_name": "e-gov innovators",
+    "team_code": "CSMH-T06",
+    "lead_name": "R.V.Pujitha",
+    "project_name": "Schemefinder",
+    "domain": "AI&NLP",
+    "problem_statement": "This project uses RAG-based AI to help users quickly find suitable schemes based on their location, eligibility, and needs.",
+    "college": "KIET Women",
+    "status": "evaluated",
+    "score": 76,
+    "grade": "Passed",
+    "evaluator_notes": null,
+    "members": [
+      {
+        "name": "R.V.Pujitha",
+        "roll_no": "24JN1A4231",
+        "is_lead": true,
+        "college": "KIET Women"
+      },
+      {
+        "name": "P.Bala Sri valli",
+        "roll_no": "24JN1A4229",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "A.Navya sri",
+        "roll_no": "24JN1A4230",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "CH. Naga Ramya sri",
+        "roll_no": "24JN1A4228",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "M.Praveena",
+        "roll_no": "24JN1A4227",
+        "is_lead": false,
+        "college": "KIET Women"
+      }
+    ],
+    "rank": 3
+  },
+  {
+    "dept": "CSM H",
+    "team_number": 7,
+    "team_name": "Journeyfy",
+    "team_code": "CSMH-T07",
+    "lead_name": "A.Mokshitha",
+    "project_name": "Travel guide assistance",
+    "domain": "AI&NLP",
+    "problem_statement": "Ai travel reasearch,place locations& nearby food finder",
+    "college": "KIET Women",
+    "status": "evaluated",
+    "score": 70,
+    "grade": "Passed",
+    "evaluator_notes": null,
+    "members": [
+      {
+        "name": "A.Mokshitha",
+        "roll_no": "24JN1A4236",
+        "is_lead": true,
+        "college": "KIET Women"
+      },
+      {
+        "name": "M.Kusumadevi",
+        "roll_no": "24JN1A4234",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "K.Kesa srivalli",
+        "roll_no": "24JN1A4233",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "T.Sindhu",
+        "roll_no": "24JN1A4232",
+        "is_lead": false,
+        "college": "KIET Women"
+      }
+    ],
+    "rank": 5
+  },
+  {
+    "dept": "CSM H",
+    "team_number": 9,
+    "team_name": "codex",
+    "team_code": "CSMH-T09",
+    "lead_name": "U.DEEPIKA",
+    "project_name": "MULTILINGUAL Travel and tourism",
+    "domain": "AI &NLP",
+    "problem_statement": "Tourists often struggle to find reliable and personalized travel information because tourism details are scattered across different websites, blogs, and platforms. Language barriers make this problem even harder, especially for travelers who prefer regional languages. Existing travel chatbots may also provide generic or inaccurate information without grounding their responses in trusted tourism sources",
+    "college": "KIET Women",
+    "status": "evaluated",
+    "score": 67,
+    "grade": "Passed",
+    "evaluator_notes": null,
+    "members": [
+      {
+        "name": "U.DEEPIKA",
+        "roll_no": "24JN1A4242",
+        "is_lead": true,
+        "college": "KIET Women"
+      },
+      {
+        "name": "A.shanmitha",
+        "roll_no": "24JN1A4244",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "CH. AKSHITHA",
+        "roll_no": "24JN1A4246",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "g.charishma",
+        "roll_no": "24JN1A4245",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "k.kranthi",
+        "roll_no": "24JN1A4247",
+        "is_lead": false,
+        "college": "KIET Women"
+      }
+    ],
+    "rank": 9
+  },
+  {
+    "dept": "CSM D",
+    "team_number": 1,
+    "team_name": "Arise",
+    "team_code": "CSMD-T01",
+    "lead_name": "G. Keerthi",
+    "project_name": "policy pilot",
+    "domain": "Fintech",
+    "problem_statement": "Banking policies are complex and difficult to understand. PolicyPilot uses RAG and a multilingual voice assistant to quickly find relevant policies and provide simple, accurate, evidence-based answers to users.",
+    "college": "KIET Women",
+    "status": "evaluated",
+    "score": 78,
+    "grade": "Top Performer",
+    "members": [
+      {
+        "name": "K. Jnaneswari",
+        "roll_no": "24JN1A4271",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "K. Asmitha",
+        "roll_no": "24JN1A4270",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "K. Divya Sri",
+        "roll_no": "24JN1A4268",
+        "is_lead": false,
+        "college": "KIET Women"
+      }
+    ],
+    "rank": 1
+  },
+  {
+    "dept": "CSM D",
+    "team_number": 2,
+    "team_name": "Elite Four",
+    "team_code": "CSMD-T02",
+    "lead_name": "A. Renuka",
+    "project_name": "cyberguard  RAG",
+    "domain": "cyber security and artificial intelligence",
+    "problem_statement": "To design and develop a source-grounded AI assistant that helps cybersecurity teams retrieve relevant incident-response knowledge and receive reliable, contextual guidance during security investigations.",
+    "college": "KIET Women",
+    "status": "evaluated",
+    "score": 70,
+    "grade": "Passed",
+    "members": [
+      {
+        "name": "K. Nandhini",
+        "roll_no": "24JN1A4273",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "V. Akhila",
+        "roll_no": "24JN1A4274",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "S. Lasya",
+        "roll_no": "24JN1A4275",
+        "is_lead": false,
+        "college": "KIET Women"
+      }
+    ],
+    "rank": 5
+  },
+  {
+    "dept": "CAI H",
+    "team_number": 1,
+    "team_name": "LexRAG",
+    "team_code": "CAIH-T01",
+    "lead_name": "B. Chandini  (24JN1A4301)",
+    "project_name": "LEGAL CONTRACT ANALYZER",
+    "domain": "Legal AI Assistant",
+    "problem_statement": "our project is a RAG-Based Legal Contract Analyzer. It helps users understand legal contracts by answering questions, explaining important clauses, identifying potentially risky terms, and comparing contracts. The chatbot uses AI and RAG to retrieve relevant contract information and provide simple, personalized explanations.\u201d",
+    "college": "KIET Women",
+    "status": "evaluated",
+    "score": 48,
+    "grade": "Needs Improvement",
+    "evaluator_notes": null,
+    "components": {
+      "rag": 12,
+      "func": 14,
+      "deploy": 0,
+      "team": 9,
+      "pres": 13,
+      "total": 48,
+      "grade": "Needs Improvement"
+    },
+    "members": [
+      {
+        "name": "G. Rama tulasi",
+        "roll_no": "24JN1A4302",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "P. Sri lakshmi",
+        "roll_no": "24JN1A4303",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "N. Navya",
+        "roll_no": "24JN1A4304",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "P. Tripura",
+        "roll_no": "24JN1A4305",
+        "is_lead": false,
+        "college": "KIET Women"
+      }
+    ],
+    "rank": 25
+  },
+  {
+    "dept": "CAI H",
+    "team_number": 2,
+    "team_name": "MediSquad",
+    "team_code": "CAIH-T02",
+    "lead_name": "Monika Kona(24JN1A4306)",
+    "project_name": "Medical knowledge assistant",
+    "domain": "Healthcare",
+    "problem_statement": "Our project is a RAG-Based Medical knowledge assistant.It helps users quickly understand medical information by asking health related questions in a chatbot",
+    "college": "KIET Women",
+    "status": "evaluated",
+    "score": 32,
+    "grade": "Needs Improvement",
+    "evaluator_notes": null,
+    "components": {
+      "rag": 8,
+      "func": 8,
+      "deploy": 0,
+      "team": 8,
+      "pres": 8,
+      "total": 32,
+      "grade": "Needs Improvement"
+    },
+    "members": [
+      {
+        "name": "Gnana Vaishnavi Chiliveru",
+        "roll_no": "24JN1A4309",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "K.Likhita",
+        "roll_no": "24JN1A4307",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "R.Srinidhi",
+        "roll_no": "24JN1A4308",
+        "is_lead": false,
+        "college": "KIET Women"
+      }
+    ],
+    "rank": 29
+  },
+  {
+    "dept": "CAI H",
+    "team_number": 3,
+    "team_name": "foodies",
+    "team_code": "CAIH-T03",
+    "lead_name": "K. Supriya (24JN1A4316)",
+    "project_name": "NUTRICHEF AI",
+    "domain": "Nutrition & food recommendation system",
+    "problem_statement": null,
+    "college": "KIET Women",
+    "status": "evaluated",
+    "score": 50,
+    "grade": "Needs Improvement",
+    "evaluator_notes": "Thanusha",
+    "components": {
+      "rag": 11,
+      "func": 14,
+      "deploy": 0,
+      "team": 10,
+      "pres": 15,
+      "total": 50,
+      "grade": "Needs Improvement",
+      "notes": "Thanusha"
+    },
+    "members": [
+      {
+        "name": "K. Bindhu bhargavi",
+        "roll_no": "24JN1A4315",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "K. Dhana Lakshmi",
+        "roll_no": "24JN1A4311",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "ch. Jaya srivalli",
+        "roll_no": "24JN1A4313",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "Ch. Lavanya",
+        "roll_no": "24JN1A4314",
+        "is_lead": false,
+        "college": "KIET Women"
+      }
+    ],
+    "rank": 20
+  },
+  {
+    "dept": "AID D",
+    "team_number": 1,
+    "team_name": "SchemeSync AI",
+    "team_code": "AIDD-T01",
+    "lead_name": "S.V.Rajyalakshmi",
+    "project_name": "Gov Schemes AI",
+    "domain": "Government Schemes",
+    "problem_statement": "Government scheme information is scattered across websites and frequently changes, making it difficult for citizens to quickly find accurate and up-to-date eligibility, benefits, and application details",
+    "college": "KIET Women",
+    "status": "evaluated",
+    "score": 51,
+    "grade": "Needs Improvement",
+    "components": {
+      "rag": 10,
+      "func": 15,
+      "deploy": 0,
+      "team": 11,
+      "pres": 15,
+      "total": 51,
+      "grade": "Needs Improvement"
+    },
+    "members": [
+      {
+        "name": "S.V.Rajyalakshmi",
+        "roll_no": "24JN1A4554",
+        "is_lead": true,
+        "college": "KIET Women"
+      },
+      {
+        "name": "P.Sharmila",
+        "roll_no": "24JN1A4555",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "R.Devi",
+        "roll_no": "24JN1A4556",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "A.Bhavani",
+        "roll_no": "24JN1A4557",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "G.Sirisha",
+        "roll_no": "24JN1A4558",
+        "is_lead": false,
+        "college": "KIET Women"
+      }
+    ],
+    "rank": 19
+  },
+  {
+    "dept": "AID D",
+    "team_number": 3,
+    "team_name": "visionX",
+    "team_code": "AIDD-T03",
+    "lead_name": "G.sowmya sree",
+    "project_name": "industrial safety&maintenance",
+    "domain": "AI industrial safety& maintenance",
+    "problem_statement": "This can take time and may lead to machine downtime, delayed maintenance, or unsafe decisions",
+    "college": "KIET Women",
+    "status": "evaluated",
+    "score": 50,
+    "grade": "Needs Improvement",
+    "components": {
+      "rag": 11,
+      "func": 14,
+      "deploy": 0,
+      "team": 10,
+      "pres": 15,
+      "total": 50,
+      "grade": "Needs Improvement"
+    },
+    "members": [
+      {
+        "name": "G.sowmya sree",
+        "roll_no": "24JN1A4566",
+        "is_lead": true,
+        "college": "KIET Women"
+      },
+      {
+        "name": "A.sai surya chakra",
+        "roll_no": "24JN1A4567",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "G.Bhanu satya",
+        "roll_no": "24JN1A4565",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "S.mahalakshmi",
+        "roll_no": "24JN1A4568",
+        "is_lead": false,
+        "college": "KIET Women"
+      }
+    ],
+    "rank": 20
+  },
+  {
+    "dept": "AID D",
+    "team_number": 2,
+    "team_name": "nexora",
+    "team_code": "AIDD-T02",
+    "lead_name": "K.Aparna",
+    "project_name": "legal Assistance Ai",
+    "domain": "legal Assistance Ai",
+    "problem_statement": "build and ai assistance that retrieves relevant information for legal documents to help users understand laws and regulations",
+    "college": "KIET Women",
+    "status": "evaluated",
+    "score": 49,
+    "grade": "Needs Improvement",
+    "components": {
+      "rag": 10,
+      "func": 13,
+      "deploy": 0,
+      "team": 11,
+      "pres": 15,
+      "total": 49,
+      "grade": "Needs Improvement"
+    },
+    "members": [
+      {
+        "name": "K.Aparna",
+        "roll_no": "24JN1A4563",
+        "is_lead": true,
+        "college": "KIET Women"
+      },
+      {
+        "name": "k Tarangini",
+        "roll_no": "24JN1A4559",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "p.Lahari",
+        "roll_no": "24JN1A4560",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "A .Satya chandrika",
+        "roll_no": "25JN5A4505",
+        "is_lead": false,
+        "college": "KIET Women"
+      }
+    ],
+    "rank": 24
+  },
+  {
+    "dept": "AID D",
+    "team_number": 5,
+    "team_name": "CyberNova",
+    "team_code": "AIDD-T05",
+    "lead_name": "B.Nagadevi",
+    "project_name": "CyberGuard Rag",
+    "domain": "Cybersecurity",
+    "problem_statement": "CyberGuard RAG is an AI-powered cybersecurity assistant that retrieves trusted security information and generates reliable, source-backed answers to cybersecurity queries.",
+    "college": "KIET Women",
+    "status": "evaluated",
+    "score": 50,
+    "grade": "Needs Improvement",
+    "components": {
+      "rag": 13,
+      "func": 12,
+      "deploy": 0,
+      "team": 11,
+      "pres": 14,
+      "total": 50,
+      "grade": "Needs Improvement"
+    },
+    "members": [
+      {
+        "name": "B.Nagadevi",
+        "roll_no": "24JN1A4578",
+        "is_lead": true,
+        "college": "KIET Women"
+      },
+      {
+        "name": "S. Kodanda Ramalakshmi",
+        "roll_no": "24JN1A4576",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "S.Ganitha",
+        "roll_no": "24JN1A4575",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "Ch.kameswari",
+        "roll_no": "24JN1A4577",
+        "is_lead": false,
+        "college": "KIET Women"
+      }
+    ],
+    "rank": 20
+  },
+  {
+    "dept": "AID D",
+    "team_number": 6,
+    "team_name": "Learnova",
+    "team_code": "AIDD-T06",
+    "lead_name": "P.Kalyani",
+    "project_name": "Study Companion AI chatbot",
+    "domain": "AI & Education Technology",
+    "problem_statement": "To provide students with instant and personalized learning support using an AI chatbot.",
+    "college": "KIET Women",
+    "status": "evaluated",
+    "score": 67,
+    "grade": "Passed",
+    "components": {
+      "rag": 15,
+      "func": 15,
+      "deploy": 10,
+      "team": 11,
+      "pres": 16,
+      "total": 67,
+      "grade": "Passed"
+    },
+    "members": [
+      {
+        "name": "P.Kalyani",
+        "roll_no": "24JN1A4583",
+        "is_lead": true,
+        "college": "KIET Women"
+      },
+      {
+        "name": "S.Kavya",
+        "roll_no": "24JN1A4579",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "J.Sai ratha hasini",
+        "roll_no": "24JN1A4582",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "L.Sri Hasini",
+        "roll_no": "24JN1A4581",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "v.sridevi",
+        "roll_no": "24JN1A4597",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "M Navya",
+        "roll_no": "24JN1A4596",
+        "is_lead": false,
+        "college": "KIET Women"
+      }
+    ],
+    "rank": 9
+  },
+  {
+    "dept": "AID D",
+    "team_number": 9,
+    "team_name": "AID D - Team 9",
+    "team_code": "AIDD-T09",
+    "lead_name": "V sridevi",
+    "project_name": "Industrial Knowledge Assistant",
+    "domain": "Industry Sector",
+    "problem_statement": "Industries and organizations maintain large amounts of information in PDFs, manuals, policies, reports, and technical documents.",
+    "college": "KIET Women",
+    "status": "evaluated",
+    "score": 43,
+    "grade": "Needs Improvement",
+    "components": {
+      "rag": 10,
+      "func": 15,
+      "deploy": 0,
+      "team": 8,
+      "pres": 10,
+      "total": 43,
+      "grade": "Needs Improvement"
+    },
+    "members": [
+      {
+        "name": "N Bhargavi sudha Raji",
+        "roll_no": "24JN1A4594",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "B sandhya",
+        "roll_no": "24JN1A4598",
+        "is_lead": false,
+        "college": "KIET Women"
+      }
+    ],
+    "rank": 26
+  },
+  {
+    "dept": "AID D",
+    "team_number": 10,
+    "team_name": "Drive Smarter. Maintain Better.",
+    "team_code": "AIDD-T10",
+    "lead_name": "V. Shanmitha",
+    "project_name": "Automobile AI assistant",
+    "domain": "Automobile AI assistant",
+    "problem_statement": "our Automobile AI Assistant is a chatbot that helps vehicle owners understand vehicle problems, warning signs, maintenance requirements, and service information. It uses AI and RAG to retrieve relevant information from vehicle manuals and provide personalized guidance.\u201d",
+    "college": "KIET Women",
+    "status": "evaluated",
+    "score": 53,
+    "grade": "Needs Improvement",
+    "components": {
+      "rag": 10,
+      "func": 13,
+      "deploy": 8,
+      "team": 9,
+      "pres": 13,
+      "total": 53,
+      "grade": "Needs Improvement"
+    },
+    "members": [
+      {
+        "name": "V. Shanmitha",
+        "roll_no": "24JN1A4599",
+        "is_lead": true,
+        "college": "KIET Women"
+      },
+      {
+        "name": "B. Gayathri",
+        "roll_no": "24JN1A45A1",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "U. Pravallika",
+        "roll_no": "24JN1A45A3",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "K. Teja ramani",
+        "roll_no": "24JN1A45A0",
+        "is_lead": false,
+        "college": "KIET Women"
+      }
+    ],
+    "rank": 18
+  },
+  {
+    "dept": "AID D",
+    "team_number": 11,
+    "team_name": "Finance",
+    "team_code": "AIDD-T11",
+    "lead_name": "Vennela",
+    "project_name": "Finance and Tax assistent",
+    "domain": "Finance",
+    "problem_statement": "Financial and tax information is distributed across large and frequently uplode document",
+    "college": "KIET Women",
+    "status": "evaluated",
+    "score": 50,
+    "grade": "Needs Improvement",
+    "components": {
+      "rag": 10,
+      "func": 12,
+      "deploy": 10,
+      "team": 9,
+      "pres": 9,
+      "total": 50,
+      "grade": "Needs Improvement"
+    },
+    "members": [
+      {
+        "name": "M.Vennela",
+        "roll_no": "24JN1A45A8",
+        "is_lead": true,
+        "college": "KIET Women"
+      },
+      {
+        "name": "V.Shaharsha",
+        "roll_no": "24JN1A45A4",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "M.Ankitha",
+        "roll_no": "24JN1A45A5",
+        "is_lead": false,
+        "college": "KIET Women"
+      },
+      {
+        "name": "M.Jaya",
+        "roll_no": "24JN1A45A7",
+        "is_lead": false,
+        "college": "KIET Women"
+      }
+    ],
+    "rank": 20
+  }
+]
