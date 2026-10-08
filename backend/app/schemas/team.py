@@ -16,6 +16,17 @@ class TeamBase(BaseModel):
     status: Optional[str] = "evaluated"
     department: Optional[str] = None
     evaluator_notes: Optional[str] = None
+    source_team_id: Optional[str] = None
+    room: Optional[str] = None
+    leader_name: Optional[str] = None
+    grade: Optional[str] = None
+    score_real_business: Optional[float] = None
+    score_chatbot_rag: Optional[float] = None
+    score_database: Optional[float] = None
+    score_platform: Optional[float] = None
+    score_team_understanding: Optional[float] = None
+    score_presentation: Optional[float] = None
+    category_scores: Optional[str] = None
 
 
 class TeamCreate(TeamBase):

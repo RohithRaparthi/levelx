@@ -75,17 +75,17 @@ export const JourneyPage: React.FC<JourneyPageProps> = ({ onNavigate }) => {
           {/* Step 2 */}
           <div className="bg-white p-7 rounded-3xl border border-[#E8E1D5] shadow-[0_1px_3px_rgba(20,22,27,0.04)] space-y-3">
             <div className="flex items-center justify-between mb-2">
-              <span className="text-xs font-mono font-bold text-[#7E8290]">PHASE 02</span>
-              <Badge variant="neutral" size="sm">Upcoming</Badge>
+              <span className="text-xs font-mono font-bold text-[#DF421A]">PHASE 02</span>
+              <Badge variant="emerald" size="sm">Completed</Badge>
             </div>
             <h3 className="font-display font-bold text-xl text-[#14161B]">
-              Autonomous Systems & Agents
+              Real Business Integration & RAG
             </h3>
             <p className="text-xs sm:text-sm text-[#5D616F] leading-relaxed">
-              Multi-agent coordination, tool-calling pipelines, structured workflows, and real-world domain integrations.
+              Multi-panel evaluation across 6 criteria: Real Business, Chatbot & RAG, Database, Platform Functionality, Tech Stack, and Live Demo.
             </p>
             <div className="pt-4 border-t border-[#E8E1D5] text-xs font-mono text-[#7E8290]">
-              Weight: 100 Credits Max
+              Weight: 100 Credits Max • 47 Teams Evaluated
             </div>
           </div>
 
@@ -113,14 +113,14 @@ export const JourneyPage: React.FC<JourneyPageProps> = ({ onNavigate }) => {
       <div className="p-8 rounded-3xl bg-white border border-[#E8E1D5] shadow-[0_2px_8px_rgba(20,22,27,0.04)] flex flex-col sm:flex-row items-center justify-between gap-6">
         <div className="space-y-1 text-center sm:text-left">
           <h4 className="font-display font-bold text-xl text-[#14161B]">Explore Official Results</h4>
-          <p className="text-xs sm:text-sm text-[#5D616F]">View the complete Phase 1 rankings, teams, and score breakdown.</p>
+          <p className="text-xs sm:text-sm text-[#5D616F]">View the complete Phase 1 & Phase 2 rankings, room scorecards, and project breakdowns.</p>
         </div>
         <Button
           size="md"
           variant="brand"
           onClick={() => onNavigate('results')}
         >
-          View Phase 1 Leaderboard
+          View Hackathon Leaderboards
         </Button>
       </div>
 

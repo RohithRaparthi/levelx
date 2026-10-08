@@ -42,6 +42,7 @@ def get_projects(
                 Team.project_description.ilike(search_term),
                 Team.team_name.ilike(search_term),
                 Team.department.ilike(search_term),
+                Team.leader_name.ilike(search_term),
             )
         )
 
@@ -68,6 +69,9 @@ def get_projects(
                 demo_url=t.demo_url,
                 college=t.college,
                 department=t.department,
+                leader_name=t.leader_name,
+                room=t.room,
+                grade=t.grade or t.award,
                 members_count=len(t.members),
             )
         )

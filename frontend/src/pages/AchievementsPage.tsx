@@ -140,7 +140,7 @@ const vaultCards: VaultCard[] = [
 
 const phases = [
   {num:1,label:"Phase 01",tag:"COMPLETE",tagColor:"bg-emerald-500/20 text-emerald-400 border-emerald-500/30",credits:100,fill:100,desc:"Foundational vector intelligence and retrieval architecture under live eval.",stat:"44 prototypes shipped"},
-  {num:2,label:"Phase 02",tag:"INCOMING",tagColor:"bg-blue-500/20 text-blue-400 border-blue-500/30",credits:200,fill:0,desc:"Multi-agent orchestration and deterministic tool execution at scale.",stat:"Unlocks Phase 3 slot"},
+  {num:2,label:"Phase 02",tag:"COMPLETE",tagColor:"bg-emerald-500/20 text-emerald-400 border-emerald-500/30",credits:200,fill:100,desc:"Multi-agent orchestration and real business RAG chatbots under live eval.",stat:"47 teams evaluated · 5 Top Performers"},
   {num:3,label:"Phase 03",tag:"SEALED",tagColor:"bg-rose-500/20 text-rose-400 border-rose-500/30",credits:300,fill:0,desc:"Live production deployment plus Grand Climax reveal on stage.",stat:"All vaults open here"},
 ];
 
@@ -165,6 +165,7 @@ export const AchievementsPage: React.FC<AchievementsPageProps> = ({ onSelectTeam
   const [achievements,setAchievements]=useState<AchievementItem[]>([]);
   const [isLoading,setIsLoading]=useState(true);
   const [activeTab,setActiveTab]=useState<"vaults"|"earners">("vaults");
+  const [selectedPhase,setSelectedPhase]=useState<number|null>(null);
   const [search,setSearch]=useState("");
   const [cracked,setCracked]=useState<Record<string,boolean>>({});
   const [cracking,setCracking]=useState<string|null>(null);
@@ -187,8 +188,9 @@ export const AchievementsPage: React.FC<AchievementsPageProps> = ({ onSelectTeam
 
   const safeAchievements=Array.isArray(achievements)?achievements:[];
   const filtered=safeAchievements.filter(a=>{
+    if (selectedPhase !== null && a.phase_id !== selectedPhase) return false;
     const q=search.toLowerCase();
-    return a.team_name.toLowerCase().includes(q)||(a.project_name?.toLowerCase().includes(q)??false);
+    return a.team_name.toLowerCase().includes(q)||(a.project_name?.toLowerCase().includes(q)??false)||(a.leader_name?.toLowerCase().includes(q)??false);
   });
 
   return (
@@ -221,7 +223,7 @@ export const AchievementsPage: React.FC<AchievementsPageProps> = ({ onSelectTeam
           </button>
           <button onClick={()=>setActiveTab("earners")}
             className={`px-5 py-2.5 rounded-xl font-bold transition-all cursor-pointer flex items-center gap-2 ${activeTab==="earners"?"bg-[#14161B] text-white shadow":"text-[#5D616F] hover:text-[#14161B]"}`}>
-            <Sparkles className="w-3.5 h-3.5" />Phase 1 Earners
+            <Sparkles className="w-3.5 h-3.5" />Podium & Top Performers
             <span className="text-[9px] px-1.5 py-0.5 rounded bg-[#E8E1D5] text-[#5D616F]">{safeAchievements.length}</span>
           </button>
         </div>
@@ -291,8 +293,8 @@ export const AchievementsPage: React.FC<AchievementsPageProps> = ({ onSelectTeam
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8 font-mono">
                 {[
                   {label:"Phase 1 High Score",val:78,suffix:".0",sub:"RAGMIND & Arise",subColor:"text-amber-400"},
-                  {label:"Total Teams Active",val:60,suffix:"",sub:"260 Builders",subColor:"text-emerald-400"},
-                  {label:"Credits Locked",val:200,suffix:"",sub:"Phases 2 & 3",subColor:"text-blue-400"},
+                  {label:"Phase 2 High Score",val:88,suffix:".0",sub:"AI Telecaller & Team 01",subColor:"text-emerald-400"},
+                  {label:"Total Active Teams",val:107,suffix:"",sub:"Phases 1 & 2 Combined",subColor:"text-blue-400"},
                   {label:"Vault Tiers Sealed",val:3,suffix:"/4",sub:"Opens at Climax",subColor:"text-rose-400"},
                 ].map(stat=>(
                   <div key={stat.label} className="space-y-1">
@@ -306,15 +308,37 @@ export const AchievementsPage: React.FC<AchievementsPageProps> = ({ onSelectTeam
           </motion.div>
         ) : (
           <motion.div key="earners" initial={{opacity:0,y:12}} animate={{opacity:1,y:0}} exit={{opacity:0,y:-8}} transition={{duration:0.25}} className="space-y-6">
-            <div className="bg-white p-4 sm:p-5 rounded-2xl border border-[#E8E1D5] flex flex-col sm:flex-row items-center justify-between gap-4">
-              <div className="relative w-full sm:max-w-md">
-                <Search className="w-4 h-4 text-[#7E8290] absolute left-3.5 top-1/2 -translate-y-1/2" />
-                <input type="text" placeholder="Search teams or projects..." value={search} onChange={e=>setSearch(e.target.value)}
-                  className="w-full pl-10 pr-4 py-2.5 bg-[#FAF7F2] border border-[#D6CDBF] rounded-xl text-xs sm:text-sm text-[#14161B] placeholder-[#7E8290] focus:outline-none focus:border-[#14161B] transition-colors" />
+            <div className="bg-white p-4 sm:p-5 rounded-2xl border border-[#E8E1D5] flex flex-col md:flex-row items-center justify-between gap-4">
+              <div className="flex items-center gap-1.5 p-1 bg-[#FAF7F2] border border-[#E8E1D5] rounded-xl self-start md:self-auto font-mono text-xs">
+                <button
+                  onClick={() => setSelectedPhase(null)}
+                  className={`px-3 py-1.5 rounded-lg font-bold transition-all cursor-pointer ${selectedPhase === null ? 'bg-[#14161B] text-white shadow' : 'text-[#5D616F] hover:text-[#14161B]'}`}
+                >
+                  All Achievements ({safeAchievements.length})
+                </button>
+                <button
+                  onClick={() => setSelectedPhase(1)}
+                  className={`px-3 py-1.5 rounded-lg font-bold transition-all cursor-pointer ${selectedPhase === 1 ? 'bg-[#14161B] text-white shadow' : 'text-[#5D616F] hover:text-[#14161B]'}`}
+                >
+                  Phase 1 Podium ({safeAchievements.filter(a => a.phase_id === 1).length})
+                </button>
+                <button
+                  onClick={() => setSelectedPhase(2)}
+                  className={`px-3 py-1.5 rounded-lg font-bold transition-all cursor-pointer ${selectedPhase === 2 ? 'bg-[#DF421A] text-white shadow' : 'text-[#5D616F] hover:text-[#14161B]'}`}
+                >
+                  Phase 2 Top 5 ({safeAchievements.filter(a => a.phase_id === 2).length})
+                </button>
               </div>
-              <div className="flex items-center gap-2 text-xs font-mono text-[#7E8290]">
-                <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                <span><strong className="text-[#14161B]">{filtered.length}</strong> teams unlocked Phase 1</span>
+
+              <div className="relative w-full md:max-w-xs">
+                <Search className="w-4 h-4 text-[#7E8290] absolute left-3.5 top-1/2 -translate-y-1/2" />
+                <input
+                  type="text"
+                  placeholder="Search teams, leaders, projects..."
+                  value={search}
+                  onChange={e=>setSearch(e.target.value)}
+                  className="w-full pl-10 pr-4 py-2 bg-[#FAF7F2] border border-[#D6CDBF] rounded-xl text-xs sm:text-sm text-[#14161B] placeholder-[#7E8290] focus:outline-none focus:border-[#14161B] transition-colors"
+                />
               </div>
             </div>
             {isLoading ? <LoadingSpinner label="Decrypting phase records..." /> :
@@ -322,7 +346,7 @@ export const AchievementsPage: React.FC<AchievementsPageProps> = ({ onSelectTeam
                 <div className="text-center py-20 bg-white rounded-3xl border border-[#E8E1D5]">
                   <div className="text-5xl mb-4">🔍</div>
                   <h3 className="font-display font-bold text-xl text-[#14161B]">No teams found</h3>
-                  <p className="text-sm text-[#5D616F] mt-2">Try clearing your search.</p>
+                  <p className="text-sm text-[#5D616F] mt-2">Try clearing your search or switching phase filters.</p>
                 </div>
               ) : (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -601,29 +625,49 @@ const RANK_ORBS: Record<number,string> = {
 interface EarnerCardProps { item:AchievementItem; index:number; onSelect:()=>void; }
 const EarnerCard: React.FC<EarnerCardProps> = ({item,index,onSelect}) => {
   const rank = item.rank??0;
+  const isPhase2 = item.phase_id === 2;
   const glowClass = rank>=1&&rank<=3?(RANK_GLOWS[rank]||""):"";
   const orbClass = rank>=1&&rank<=3?(RANK_ORBS[rank]||"bg-[#FAF7F2] text-[#14161B] border border-[#E8E1D5]"):"bg-[#FAF7F2] text-[#14161B] border border-[#E8E1D5]";
   return (
     <motion.div initial={{opacity:0,y:16}} animate={{opacity:1,y:0}} transition={{delay:index*0.04,duration:0.3}}
       onClick={onSelect} className={`bg-white rounded-3xl border border-[#E8E1D5] p-6 cursor-pointer group hover:border-[#D6CDBF] transition-all flex flex-col justify-between ${glowClass} hover:shadow-[0_16px_36px_-8px_rgba(20,22,27,0.1)]`}>
       <div>
-        <div className="flex items-center justify-between mb-5">
-          {rank ? (
-            <div className={`w-10 h-10 rounded-full flex items-center justify-center text-sm font-black font-mono ${orbClass}`}>#{rank}</div>
-          ) : (
-            <div className="w-10 h-10 rounded-full bg-[#FAF7F2] border border-[#E8E1D5] flex items-center justify-center"><Sparkles className="w-4 h-4 text-[#C8C0B2]" /></div>
-          )}
+        <div className="flex items-center justify-between mb-4">
+          <div className="flex items-center gap-2">
+            {rank ? (
+              <div className={`w-10 h-10 rounded-full flex items-center justify-center text-sm font-black font-mono ${orbClass}`}>#{rank}</div>
+            ) : (
+              <div className="w-10 h-10 rounded-full bg-[#FAF7F2] border border-[#E8E1D5] flex items-center justify-center"><Sparkles className="w-4 h-4 text-[#C8C0B2]" /></div>
+            )}
+            <span className={`text-[10px] font-mono font-bold px-2 py-0.5 rounded border ${isPhase2 ? "bg-[#DF421A]/10 text-[#DF421A] border-[#DF421A]/20" : "bg-emerald-500/10 text-emerald-600 border-emerald-500/20"}`}>
+              {isPhase2 ? `Phase 2${item.room ? ` • ${item.room}` : ''}` : 'Phase 1'}
+            </span>
+          </div>
           {item.score!==null&&item.score!==undefined&&(
             <div className="font-mono text-xs font-bold text-[#14161B] bg-[#FAF7F2] border border-[#E8E1D5] px-3 py-1 rounded-full">{item.score} <span className="text-[#7E8290] font-normal">pts</span></div>
           )}
         </div>
         <h3 className="font-display font-black text-xl text-[#14161B] group-hover:text-[#DF421A] transition-colors mb-1">{item.team_name}</h3>
-        {item.project_name&&<p className="text-xs font-mono text-[#7E8290] line-clamp-1">{item.project_name}</p>}
+        {item.project_name ? (
+          <p className="text-xs font-mono text-[#5D616F] line-clamp-1 mb-1">{item.project_name}</p>
+        ) : (
+          <p className="text-xs font-mono italic text-[#A0A4B0] mb-1">Project name not provided in source</p>
+        )}
+        {item.leader_name && (
+          <p className="text-[11px] font-mono text-[#7E8290]">Leader: <span className="text-[#14161B] font-semibold">{item.leader_name}</span></p>
+        )}
+        {item.award && (
+          <div className="mt-2 inline-flex items-center gap-1 text-[10px] font-mono font-bold text-amber-700 bg-amber-50 border border-amber-200/60 px-2 py-0.5 rounded">
+            ★ {item.award}
+          </div>
+        )}
       </div>
       <div className="pt-4 mt-4 border-t border-[#E8E1D5] flex items-center justify-between">
         <div className="flex items-center gap-1">
-          {[1,2,3].map(ph=>(<div key={ph} className={`w-2 h-2 rounded-full ${ph===1?"bg-emerald-500":"bg-[#E8E1D5]"}`} />))}
-          <span className="text-[10px] font-mono text-[#B7BAC6] ml-1.5">Phase 1 cleared</span>
+          <div className="w-2 h-2 rounded-full bg-emerald-500" />
+          <div className={`w-2 h-2 rounded-full ${isPhase2 ? "bg-emerald-500" : "bg-[#E8E1D5]"}`} />
+          <div className="w-2 h-2 rounded-full bg-[#E8E1D5]" />
+          <span className="text-[10px] font-mono text-[#7E8290] ml-1.5">{isPhase2 ? 'Phase 2 Top Performer' : 'Phase 1 Cleared'}</span>
         </div>
         <span className="text-[11px] font-mono font-semibold text-[#14161B] flex items-center gap-1 group-hover:translate-x-0.5 transition-transform">
           View <ArrowUpRight className="w-3.5 h-3.5 text-[#DF421A] opacity-70" />

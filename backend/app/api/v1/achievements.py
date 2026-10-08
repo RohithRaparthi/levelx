@@ -54,6 +54,9 @@ def get_achievements(
                 rank=t.rank,
                 score=t.score,
                 college=t.college,
+                leader_name=t.leader_name,
+                room=t.room,
+                grade=t.grade or t.award,
             )
         )
 

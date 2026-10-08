@@ -14,8 +14,11 @@ class ProjectResponse(BaseModel):
     award: Optional[str] = None
     github_url: Optional[str] = None
     demo_url: Optional[str] = None
-    college: Optional[str] = "KIET Women"
+    college: Optional[str] = None
     department: Optional[str] = None
+    leader_name: Optional[str] = None
+    room: Optional[str] = None
+    grade: Optional[str] = None
     members_count: int = 0
 
     model_config = ConfigDict(from_attributes=True)

@@ -42,7 +42,10 @@ def get_teams(
                 Team.team_name.ilike(search_term),
                 Team.project_name.ilike(search_term),
                 Team.award.ilike(search_term),
-                Team.department.ilike(search_term)
+                Team.department.ilike(search_term),
+                Team.leader_name.ilike(search_term),
+                Team.room.ilike(search_term),
+                Team.source_team_id.ilike(search_term),
             )
         )
 
@@ -80,6 +83,17 @@ def get_teams(
                 status=t.status,
                 department=t.department,
                 evaluator_notes=t.evaluator_notes,
+                source_team_id=t.source_team_id,
+                room=t.room,
+                leader_name=t.leader_name,
+                grade=t.grade or t.award,
+                score_real_business=t.score_real_business,
+                score_chatbot_rag=t.score_chatbot_rag,
+                score_database=t.score_database,
+                score_platform=t.score_platform,
+                score_team_understanding=t.score_team_understanding,
+                score_presentation=t.score_presentation,
+                category_scores=t.category_scores,
                 members_count=len(t.members),
             )
         )
@@ -135,5 +149,16 @@ def get_team_by_id(team_id: int, db: Session = Depends(get_db)) -> TeamDetailRes
         status=team.status,
         department=team.department,
         evaluator_notes=team.evaluator_notes,
+        source_team_id=team.source_team_id,
+        room=team.room,
+        leader_name=team.leader_name,
+        grade=team.grade or team.award,
+        score_real_business=team.score_real_business,
+        score_chatbot_rag=team.score_chatbot_rag,
+        score_database=team.score_database,
+        score_platform=team.score_platform,
+        score_team_understanding=team.score_team_understanding,
+        score_presentation=team.score_presentation,
+        category_scores=team.category_scores,
         members=members_list,
     )

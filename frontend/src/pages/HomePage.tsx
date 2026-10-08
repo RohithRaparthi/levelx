@@ -43,7 +43,6 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectTeam }) 
     return () => clearInterval(timer);
   }, []);
 
-  const phase1 = phases.find(p => p.name.toLowerCase().includes('phase 1')) || phases[0];
   const totalTeamsCount = phases.reduce((acc, curr) => acc + curr.teams_count, 0);
   const currentHeroPhoto = ALL_PHASE1_PHOTOS[heroPhotoIndex];
 
@@ -66,7 +65,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectTeam }) 
 
           <div className="flex items-center gap-2 text-xs font-mono text-[#156B3F] font-semibold">
             <span className="w-2 h-2 rounded-full bg-[#156B3F]" />
-            <span>Phase 1 Completed & Evaluated</span>
+            <span>Phases 1 & 2 Completed & Evaluated</span>
           </div>
         </div>
 
@@ -100,7 +99,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectTeam }) 
                 onClick={() => onNavigate('results')}
                 className="px-6 py-3.5 rounded-2xl bg-[#DF421A] text-white font-semibold text-sm hover:bg-[#C83812] shadow-[0_2px_8px_rgba(223,66,26,0.25)] flex items-center gap-2 transition-all cursor-pointer"
               >
-                <span>Explore Phase 1 Leaderboard</span>
+                <span>Explore Phase 1 & 2 Leaderboards</span>
                 <ArrowRight className="w-4 h-4" />
               </button>
 
@@ -115,19 +114,19 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectTeam }) 
 
             {/* Inset Metric Strip */}
             <div className="pt-6 grid grid-cols-3 gap-3.5 border-t border-[#E8E1D5] font-mono">
-              <div className="p-3.5 rounded-2xl bg-[#F4EDE2] border border-[#E5DECة]">
+              <div className="p-3.5 rounded-2xl bg-[#F4EDE2] border border-[#E8E1D5]">
                 <div className="text-[10px] text-[#7E8290] uppercase tracking-wider">SERIES PHASES</div>
-                <div className="text-base font-bold text-[#14161B] mt-0.5">3 Phases</div>
+                <div className="text-base font-bold text-[#14161B] mt-0.5">2 / 3 Complete</div>
               </div>
 
-              <div className="p-3.5 rounded-2xl bg-[#F4EDE2] border border-[#E5DECة]">
-                <div className="text-[10px] text-[#7E8290] uppercase tracking-wider">PHASE 1 ENROLLED</div>
+              <div className="p-3.5 rounded-2xl bg-[#F4EDE2] border border-[#E8E1D5]">
+                <div className="text-[10px] text-[#7E8290] uppercase tracking-wider">TOTAL TEAMS</div>
                 <div className="text-base font-bold text-[#DF421A] mt-0.5">
-                  {phase1 ? `${phase1.teams_count} Teams` : `${totalTeamsCount} Teams`}
+                  {totalTeamsCount > 0 ? `${totalTeamsCount} Teams` : '107 Teams'}
                 </div>
               </div>
 
-              <div className="p-3.5 rounded-2xl bg-[#F4EDE2] border border-[#E5DECة]">
+              <div className="p-3.5 rounded-2xl bg-[#F4EDE2] border border-[#E8E1D5]">
                 <div className="text-[10px] text-[#7E8290] uppercase tracking-wider">MAX CREDITS</div>
                 <div className="text-base font-bold text-[#156B3F] mt-0.5">300 Credits</div>
               </div>
@@ -275,19 +274,23 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectTeam }) 
             </div>
 
             {/* Phase 2 */}
-            <div className="p-6 rounded-2xl bg-white/5 border border-white/10 space-y-3 opacity-80">
+            <div
+              onClick={() => onNavigate('results')}
+              className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-[#DF421A] transition-colors cursor-pointer group space-y-3"
+            >
               <div className="flex items-center justify-between">
-                <span className="text-xs font-bold text-[#8C90A0]">02 • PHASE 2</span>
-                <Badge variant="neutral" size="sm">Coming Soon</Badge>
+                <span className="text-xs font-bold text-[#DF421A]">02 • PHASE 2</span>
+                <Badge variant="emerald" size="sm">Completed</Badge>
               </div>
-              <h3 className="font-display font-bold text-xl text-white">
-                Autonomous Systems & Deep Tech
+              <h3 className="font-display font-bold text-xl text-white group-hover:text-[#F8CCBB] transition-colors">
+                Real Business RAG & Chatbots
               </h3>
               <p className="text-xs text-[#8C90A0] font-sans leading-relaxed">
-                Multi-agent orchestration, tool-calling pipelines, and live domain integrations.
+                Live databases, real-world catalog integrations, and conversational RAG assistants evaluated across 6 criteria.
               </p>
-              <div className="pt-3 border-t border-white/10 text-xs text-[#8C90A0]">
-                100 Credits Max
+              <div className="pt-3 border-t border-white/10 flex items-center justify-between text-xs text-[#DF421A] font-bold">
+                <span>100 Credits Max</span>
+                <span>View Results →</span>
               </div>
             </div>
 
@@ -331,7 +334,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectTeam }) 
             onClick={() => onNavigate('results')}
             className="text-xs font-mono text-[#DF421A] font-bold hover:underline flex items-center gap-1 cursor-pointer"
           >
-            <span>Explore Full Phase 1 Leaderboard</span>
+            <span>Explore Official Leaderboards</span>
             <ArrowRight className="w-3.5 h-3.5" />
           </button>
         </div>

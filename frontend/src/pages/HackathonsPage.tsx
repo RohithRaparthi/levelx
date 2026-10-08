@@ -92,34 +92,76 @@ export const HackathonsPage: React.FC<HackathonsPageProps> = ({ onNavigate }) =>
             </div>
           </div>
 
-          {/* Phase 2 - Upcoming */}
-          <div className="bg-[#FAF7F2] p-8 sm:p-10 rounded-3xl border border-[#E8E1D5] space-y-6 opacity-90">
+          {/* Phase 2 - Completed Paper Slab */}
+          <div className="bg-white p-8 sm:p-10 rounded-3xl border border-[#DFD6C7] shadow-[0_4px_20px_-2px_rgba(20,22,27,0.06)] relative space-y-6">
             <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 pb-6 border-b border-[#E8E1D5]">
               <div className="space-y-2">
                 <div className="flex items-center gap-3">
-                  <Badge variant="neutral" icon={<Clock className="w-3.5 h-3.5" />}>
-                    Phase 2 Upcoming
+                  <Badge variant="emerald" pulse icon={<CheckCircle2 className="w-3.5 h-3.5" />}>
+                    Phase 2 Completed
                   </Badge>
-                  <span className="text-xs font-mono text-[#7E8290]">Theme Release Soon</span>
+                  <span className="text-xs font-mono text-[#7E8290]">Production Hackathon Evaluation</span>
                 </div>
 
-                <h2 className="font-display font-bold text-2xl text-[#14161B]">
-                  Phase 2 — Autonomous Systems & Agentic Workflows
+                <h2 className="font-display font-black text-2xl sm:text-3xl text-[#14161B] tracking-tight">
+                  Phase 2 — Real Business Integration & RAG Chatbots
                 </h2>
 
                 <p className="text-sm text-[#5D616F] max-w-2xl leading-relaxed">
-                  The second technical milestone of LEVELX. Student teams will engineer distributed multi-agent systems and live tool-calling integrations.
+                  Collegiate teams engineered operational business platforms integrating real customer workflows, live database backends, and grounded RAG chatbot assistants evaluated across multiple room panels.
                 </p>
               </div>
 
-              <div className="text-xs font-mono text-[#7E8290] shrink-0 font-medium">
-                Prerequisites announced shortly
+              <div className="shrink-0">
+                <Button
+                  size="md"
+                  variant="brand"
+                  icon={<Trophy className="w-4 h-4" />}
+                  onClick={() => onNavigate('results')}
+                >
+                  Explore Phase 2 Leaderboard
+                </Button>
               </div>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-mono text-[#7E8290]">
-              <div>• Weight: 0 to 100 Credits</div>
-              <div>• Hands-on masterclasses before build phase</div>
+            {/* Official Scoring Framework */}
+            <div className="space-y-3">
+              <div className="text-[11px] font-mono uppercase tracking-wider text-[#DF421A] font-bold">
+                Official 100-Point Scoring Framework (6 Evaluated Categories)
+              </div>
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 font-mono text-xs">
+                <div className="p-3 rounded-xl bg-[#FAF7F2] border border-[#E8E1D5]">
+                  <div className="text-[#7E8290] text-[10px]">REAL BUSINESS</div>
+                  <div className="text-sm font-bold text-[#14161B] mt-0.5">15 pts</div>
+                </div>
+                <div className="p-3 rounded-xl bg-[#FAF7F2] border border-[#E8E1D5]">
+                  <div className="text-[#7E8290] text-[10px]">CHATBOT & RAG</div>
+                  <div className="text-sm font-bold text-[#14161B] mt-0.5">25 pts</div>
+                </div>
+                <div className="p-3 rounded-xl bg-[#FAF7F2] border border-[#E8E1D5]">
+                  <div className="text-[#7E8290] text-[10px]">DATABASE USED</div>
+                  <div className="text-sm font-bold text-[#14161B] mt-0.5">15 pts</div>
+                </div>
+                <div className="p-3 rounded-xl bg-[#FAF7F2] border border-[#E8E1D5]">
+                  <div className="text-[#7E8290] text-[10px]">FUNCTIONALITY</div>
+                  <div className="text-sm font-bold text-[#14161B] mt-0.5">20 pts</div>
+                </div>
+                <div className="p-3 rounded-xl bg-[#FAF7F2] border border-[#E8E1D5]">
+                  <div className="text-[#7E8290] text-[10px]">TECH STACK</div>
+                  <div className="text-sm font-bold text-[#14161B] mt-0.5">15 pts</div>
+                </div>
+                <div className="p-3 rounded-xl bg-[#FAF7F2] border border-[#E8E1D5]">
+                  <div className="text-[#7E8290] text-[10px]">DEMO & PITCH</div>
+                  <div className="text-sm font-bold text-[#14161B] mt-0.5">10 pts</div>
+                </div>
+              </div>
+              <div className="flex flex-wrap items-center gap-4 text-xs font-mono text-[#7E8290] pt-1">
+                <span>Scale: <strong className="text-[#156B3F]">80–100 Top Performer</strong></span>
+                <span>•</span>
+                <span><strong className="text-blue-600">60–79 Passed</strong></span>
+                <span>•</span>
+                <span><strong className="text-[#C2410C]">&lt;60 Needs Improvement</strong></span>
+              </div>
             </div>
           </div>
 

@@ -172,10 +172,21 @@ export const api = {
   },
 
   // Achievements
-  getAchievements: async (): Promise<Achievement[]> => {
+  getAchievements: async (params?: {
+    phase_id?: number;
+    college?: string;
+  }): Promise<Achievement[]> => {
+    const query = new URLSearchParams();
+    if (params?.phase_id !== undefined) {
+      query.set('phase_id', params.phase_id.toString());
+    }
+    if (params?.college) {
+      query.set('college', params.college);
+    }
+    const qs = query.toString();
     const res = await fetchJson<
       AchievementListResponse | Achievement[]
-    >('/achievements');
+    >(`/achievements${qs ? `?${qs}` : ''}`);
 
     if (Array.isArray(res)) {
       return res;

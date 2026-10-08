@@ -113,12 +113,27 @@ export const TeamDetailModal: React.FC<TeamDetailModalProps> = ({ teamId, onClos
                         {team.award}
                       </Badge>
                     )}
+                    {team.room && (
+                      <span className="text-[11px] font-mono font-semibold text-[#DF421A] px-2.5 py-0.5 rounded-lg bg-[#FAF7F2] border border-[#E8E1D5]">
+                        {team.room}
+                      </span>
+                    )}
+                    {team.source_team_id && (
+                      <span className="text-[11px] font-mono text-[#7E8290] px-2.5 py-0.5 rounded-lg bg-[#FAF7F2] border border-[#E8E1D5]">
+                        Original ID: {team.source_team_id}
+                      </span>
+                    )}
+                    {team.leader_name && (
+                      <span className="text-[11px] font-mono text-[#14161B] font-semibold px-2.5 py-0.5 rounded-lg bg-[#FAF7F2] border border-[#E8E1D5]">
+                        Lead: {team.leader_name}
+                      </span>
+                    )}
                     {team.college && (
                       <span className="text-[11px] font-mono text-[#7E8290] px-2.5 py-0.5 rounded-lg bg-[#FAF7F2] border border-[#E8E1D5]">
                         {team.college}
                       </span>
                     )}
-                    {team.department && (
+                    {team.department && !team.room && (
                       <span className="text-[11px] font-mono text-[#7E8290] px-2.5 py-0.5 rounded-lg bg-[#FAF7F2] border border-[#E8E1D5]">
                         Dept: {team.department}
                       </span>
@@ -145,9 +160,9 @@ export const TeamDetailModal: React.FC<TeamDetailModalProps> = ({ teamId, onClos
                   </div>
 
                   <div className="p-3.5 rounded-2xl bg-[#FAF7F2] border border-[#E8E1D5]">
-                    <div className="text-[10px] text-[#7E8290] uppercase tracking-wider">TEAM SIZE</div>
-                    <div className="text-xl font-bold text-[#14161B] mt-0.5">
-                      {team.members.length} {team.members.length === 1 ? 'Builder' : 'Builders'}
+                    <div className="text-[10px] text-[#7E8290] uppercase tracking-wider">OFFICIAL GRADE</div>
+                    <div className="text-sm font-bold text-[#14161B] mt-1">
+                      {team.grade || team.award || 'Evaluated'}
                     </div>
                   </div>
 
@@ -158,6 +173,66 @@ export const TeamDetailModal: React.FC<TeamDetailModalProps> = ({ teamId, onClos
                     </div>
                   </div>
                 </div>
+
+                {/* Phase 2: 6 Official Scoring Criteria Breakdown */}
+                {(team.score_real_business !== null && team.score_real_business !== undefined ||
+                  team.score_chatbot_rag !== null && team.score_chatbot_rag !== undefined ||
+                  team.score_database !== null && team.score_database !== undefined) && (
+                  <div className="space-y-3 p-4 rounded-2xl bg-[#FAF7F2] border border-[#E8E1D5]">
+                    <div className="flex items-center justify-between">
+                      <span className="text-[11px] font-mono font-bold uppercase tracking-wider text-[#DF421A]">
+                        Phase 2 Official Evaluation Scorecard (100 Pts)
+                      </span>
+                      <span className="text-xs font-mono font-bold text-[#14161B]">
+                        Total: {team.score} / 100
+                      </span>
+                    </div>
+
+                    <div className="grid grid-cols-2 sm:grid-cols-3 gap-2.5 font-mono text-xs">
+                      <div className="p-2.5 rounded-xl bg-white border border-[#E8E1D5]">
+                        <div className="text-[10px] text-[#7E8290]">Real Business (15)</div>
+                        <div className="text-sm font-bold text-[#14161B] mt-0.5">
+                          {team.score_real_business !== null && team.score_real_business !== undefined ? `${team.score_real_business} / 15` : 'N/A'}
+                        </div>
+                      </div>
+
+                      <div className="p-2.5 rounded-xl bg-white border border-[#E8E1D5]">
+                        <div className="text-[10px] text-[#7E8290]">Chatbot & RAG (25)</div>
+                        <div className="text-sm font-bold text-[#14161B] mt-0.5">
+                          {team.score_chatbot_rag !== null && team.score_chatbot_rag !== undefined ? `${team.score_chatbot_rag} / 25` : 'N/A'}
+                        </div>
+                      </div>
+
+                      <div className="p-2.5 rounded-xl bg-white border border-[#E8E1D5]">
+                        <div className="text-[10px] text-[#7E8290]">Database Used (15)</div>
+                        <div className="text-sm font-bold text-[#14161B] mt-0.5">
+                          {team.score_database !== null && team.score_database !== undefined ? `${team.score_database} / 15` : 'N/A'}
+                        </div>
+                      </div>
+
+                      <div className="p-2.5 rounded-xl bg-white border border-[#E8E1D5]">
+                        <div className="text-[10px] text-[#7E8290]">Platform Function (20)</div>
+                        <div className="text-sm font-bold text-[#14161B] mt-0.5">
+                          {team.score_platform !== null && team.score_platform !== undefined ? `${team.score_platform} / 20` : 'N/A'}
+                        </div>
+                      </div>
+
+                      <div className="p-2.5 rounded-xl bg-white border border-[#E8E1D5]">
+                        <div className="text-[10px] text-[#7E8290]">Tech Stack & Und. (15)</div>
+                        <div className="text-sm font-bold text-[#14161B] mt-0.5">
+                          {team.score_team_understanding !== null && team.score_team_understanding !== undefined ? `${team.score_team_understanding} / 15` : 'N/A'}
+                        </div>
+                      </div>
+
+                      <div className="p-2.5 rounded-xl bg-white border border-[#E8E1D5]">
+                        <div className="text-[10px] text-[#7E8290]">Presentation (10)</div>
+                        <div className="text-sm font-bold text-[#14161B] mt-0.5">
+                          {team.score_presentation !== null && team.score_presentation !== undefined ? `${team.score_presentation} / 10` : 'N/A'}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                )}
 
                 {/* Disqualified or Evaluator Notes Warning */}
                 {team.evaluator_notes && (
@@ -186,12 +261,19 @@ export const TeamDetailModal: React.FC<TeamDetailModalProps> = ({ teamId, onClos
                 <div className="space-y-3">
                   <div className="flex items-center gap-2 text-xs font-mono text-[#7E8290] font-bold uppercase tracking-wider">
                     <Users className="w-3.5 h-3.5" />
-                    <span>Student Builder Roster ({team.members.length})</span>
+                    <span>Student Builder Roster ({team.members.length || (team.leader_name ? 1 : 0)})</span>
                   </div>
 
                   {team.members.length === 0 ? (
-                    <div className="p-4 rounded-2xl bg-[#FAF7F2] text-xs font-mono text-[#7E8290] text-center border border-[#E8E1D5]">
-                      No individual members mapped.
+                    <div className="p-4 rounded-2xl bg-[#FAF7F2] text-xs font-mono text-[#7E8290] text-center border border-[#E8E1D5] space-y-1">
+                      {team.leader_name ? (
+                        <>
+                          <div className="font-bold text-[#14161B]">Designated Team Leader: {team.leader_name}</div>
+                          <div>Individual team members were not separately enumerated in the Phase 2 room scoring sheet.</div>
+                        </>
+                      ) : (
+                        <div>Team leader and roster details were not provided in the source record.</div>
+                      )}
                     </div>
                   ) : (
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">

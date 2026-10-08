@@ -12,6 +12,9 @@ class AchievementResponse(BaseModel):
     rank: Optional[int] = None
     score: Optional[float] = None
     college: Optional[str] = None
+    leader_name: Optional[str] = None
+    room: Optional[str] = None
+    grade: Optional[str] = None
 
     model_config = ConfigDict(from_attributes=True)
 

@@ -48,6 +48,17 @@ export interface TeamSummary {
   status?: string | null;
   department?: string | null;
   evaluator_notes?: string | null;
+  source_team_id?: string | null;
+  room?: string | null;
+  leader_name?: string | null;
+  grade?: string | null;
+  score_real_business?: number | null;
+  score_chatbot_rag?: number | null;
+  score_database?: number | null;
+  score_platform?: number | null;
+  score_team_understanding?: number | null;
+  score_presentation?: number | null;
+  category_scores?: string | null;
   members_count: number;
 }
 
@@ -65,6 +76,8 @@ export interface TeamListResponse {
 export interface ProjectItem {
   team_id: number;
   team_name: string;
+  phase_id?: number;
+  phase_name?: string | null;
   project_name: string;
   project_description?: string | null;
   github_url?: string | null;
@@ -73,6 +86,10 @@ export interface ProjectItem {
   score?: number | null;
   rank?: number | null;
   college?: string | null;
+  leader_name?: string | null;
+  room?: string | null;
+  grade?: string | null;
+  members_count?: number;
 }
 
 export interface ProjectListResponse {
@@ -95,12 +112,16 @@ export type HighlightItem = Highlight;
 export interface Achievement {
   team_id: number;
   team_name: string;
+  phase_id?: number;
   phase_name?: string | null;
   award: string;
   project_name?: string | null;
   score?: number | null;
   rank?: number | null;
   college?: string | null;
+  leader_name?: string | null;
+  room?: string | null;
+  grade?: string | null;
 }
 
 export type AchievementItem = Achievement;

@@ -79,40 +79,94 @@ export const ALL_PHASE1_PHOTOS: EventPhoto[] = [
   },
 ];
 
+export const ALL_PHASE2_PHOTOS: EventPhoto[] = [
+  {
+    id: 'p2-1',
+    title: 'Phase 2 Cohort Assembly & Masterclass',
+    category: 'Briefing & Launch',
+    imageSrc: '/assets/events/phase2_hall_assembly.jpg',
+    caption: 'Student builder teams gathered in the hall for the Phase 2 briefing on Real Business workflow integration and production RAG chatbots.',
+    location: 'Campus Seminar Arena',
+  },
+  {
+    id: 'p2-2',
+    title: 'Phase 2 Build Floor & Computer Labs',
+    category: 'Arena Build',
+    imageSrc: '/assets/events/phase2_lab_arena.jpg',
+    caption: 'Collegiate engineers immersed in sprint development across laptop workstations, writing backend APIs and vector search pipelines.',
+    location: 'Engineering Computing Labs',
+  },
+  {
+    id: 'p2-3',
+    title: 'Live Desk Mentorship & Architecture Review',
+    category: 'Mentorship & Review',
+    imageSrc: '/assets/events/phase2_mentor_review.jpg',
+    caption: 'Technical evaluators and mentors discussing real business database integrations, schema models, and edge-case handling with teams.',
+    location: 'Evaluation Room Desks',
+  },
+  {
+    id: 'p2-4',
+    title: 'Live Panel Pitch & Team Presentation',
+    category: 'Pitch & Demo',
+    imageSrc: '/assets/events/phase2_team_presentation.jpg',
+    caption: 'Team demonstrating their live application, database queries, and conversational RAG agent on the interactive smart display to the room jury.',
+    location: 'Judging Presentation Room',
+  },
+  {
+    id: 'p2-5',
+    title: 'Intensive Team Collaboration & Sprints',
+    category: 'Teamwork & Sprint',
+    imageSrc: '/assets/events/phase2_collaboration_sprint.jpg',
+    caption: 'Builders collaborating across frontend and backend stacks, refining catalog data and chatbot accuracy before the evaluation deadline.',
+    location: 'Innovation Work Lounge',
+  },
+];
+
+export const ALL_EVENT_PHOTOS: EventPhoto[] = [...ALL_PHASE1_PHOTOS, ...ALL_PHASE2_PHOTOS];
+
 interface CinematicPhotoReelProps {
+  photos?: EventPhoto[];
   compact?: boolean;
   className?: string;
   intervalMs?: number;
 }
 
 export const CinematicPhotoReel: React.FC<CinematicPhotoReelProps> = ({
+  photos,
   compact = false,
   className = '',
   intervalMs = 2800, // Faster slideshow timing
 }) => {
+  const activePhotos = photos && photos.length > 0 ? photos : ALL_EVENT_PHOTOS;
   const [currentIndex, setCurrentIndex] = useState<number>(0);
   const [isPlaying, setIsPlaying] = useState<boolean>(true);
   const [lightboxPhoto, setLightboxPhoto] = useState<EventPhoto | null>(null);
 
-  // Faster auto-advancing slideshow
+  // Reset index when photo list changes
   useEffect(() => {
-    if (!isPlaying) return;
+    setCurrentIndex(0);
+  }, [photos]);
+
+  // Auto-advancing slideshow
+  useEffect(() => {
+    if (!isPlaying || activePhotos.length <= 1) return;
     const interval = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % ALL_PHASE1_PHOTOS.length);
+      setCurrentIndex((prev) => (prev + 1) % activePhotos.length);
     }, intervalMs);
 
     return () => clearInterval(interval);
-  }, [isPlaying, intervalMs]);
+  }, [isPlaying, intervalMs, activePhotos]);
 
   const handleNext = () => {
-    setCurrentIndex((prev) => (prev + 1) % ALL_PHASE1_PHOTOS.length);
+    setCurrentIndex((prev) => (prev + 1) % activePhotos.length);
   };
 
   const handlePrev = () => {
-    setCurrentIndex((prev) => (prev - 1 + ALL_PHASE1_PHOTOS.length) % ALL_PHASE1_PHOTOS.length);
+    setCurrentIndex((prev) => (prev - 1 + activePhotos.length) % activePhotos.length);
   };
 
-  const currentPhoto = ALL_PHASE1_PHOTOS[currentIndex];
+  const safeIndex = currentIndex < activePhotos.length ? currentIndex : 0;
+  const currentPhoto = activePhotos[safeIndex] || activePhotos[0];
 
   return (
     <>
@@ -158,7 +212,7 @@ export const CinematicPhotoReel: React.FC<CinematicPhotoReelProps> = ({
                   {currentPhoto.category}
                 </Badge>
                 <span className="px-2.5 py-0.5 rounded-md bg-[#14161B]/80 text-white font-mono text-[11px] font-bold border border-white/20 backdrop-blur-sm shadow-sm">
-                  {currentIndex + 1} / {ALL_PHASE1_PHOTOS.length}
+                  {safeIndex + 1} / {activePhotos.length}
                 </span>
               </div>
 
@@ -213,8 +267,8 @@ export const CinematicPhotoReel: React.FC<CinematicPhotoReelProps> = ({
 
         {/* Thumbnail Selector Strip */}
         <div className="flex items-center justify-center gap-2 max-w-4xl mx-auto overflow-x-auto py-2 px-2">
-          {ALL_PHASE1_PHOTOS.map((photo, idx) => {
-            const isSelected = idx === currentIndex;
+          {activePhotos.map((photo, idx) => {
+            const isSelected = idx === safeIndex;
             return (
               <button
                 key={photo.id}

@@ -272,3 +272,59 @@ def test_get_achievements_filtered():
     assert response.status_code == 200
     data = response.json()
     assert data["total"] == 0
+
+
+# --- 8. PHASE 2 MULTI-PHASE EXTENSION TESTS ---
+def test_phase2_team_filtering_and_fields():
+    db = TestingSessionLocal()
+    p2 = db.query(Phase).filter(Phase.name == "Phase 2").first()
+    t_p2 = Team(
+        phase_id=p2.id,
+        team_name="Team 9 - J.YASWANTH",
+        project_name="AI TELECALLER",
+        score=88.0,
+        rank=1,
+        award="Top Performer",
+        source_team_id="9",
+        room="Room 4",
+        leader_name="J.YASWANTH",
+        grade="Top Performer",
+        score_real_business=12.0,
+        score_chatbot_rag=20.0,
+        score_database=15.0,
+        score_platform=19.0,
+        score_team_understanding=12.0,
+        score_presentation=10.0,
+    )
+    db.add(t_p2)
+    db.commit()
+
+    # Filter by Phase 2
+    res_p2 = client.get("/api/v1/teams?phase_id=2")
+    assert res_p2.status_code == 200
+    p2_data = res_p2.json()
+    assert p2_data["total"] == 1
+    assert p2_data["items"][0]["project_name"] == "AI TELECALLER"
+    assert p2_data["items"][0]["leader_name"] == "J.YASWANTH"
+    assert p2_data["items"][0]["room"] == "Room 4"
+    assert p2_data["items"][0]["grade"] == "Top Performer"
+
+    # Filter by Phase 1 - must not contain Phase 2 team
+    res_p1 = client.get("/api/v1/teams?phase_id=1")
+    assert res_p1.status_code == 200
+    p1_data = res_p1.json()
+    assert p1_data["total"] == 3
+
+    # Search by leader name
+    res_search = client.get("/api/v1/teams?search=YASWANTH")
+    assert res_search.status_code == 200
+    assert res_search.json()["total"] == 1
+
+    # Achievements for Phase 2
+    res_ach_p2 = client.get("/api/v1/achievements?phase_id=2")
+    assert res_ach_p2.status_code == 200
+    ach_data = res_ach_p2.json()
+    assert ach_data["total"] == 1
+    assert ach_data["items"][0]["award"] == "Top Performer"
+    assert ach_data["items"][0]["leader_name"] == "J.YASWANTH"
+

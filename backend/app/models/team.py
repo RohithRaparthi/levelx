@@ -31,6 +31,19 @@ class Team(Base):
     department: Mapped[Optional[str]] = mapped_column(String(100), nullable=True)
     evaluator_notes: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
 
+    # Phase 2 metadata & scoring components
+    source_team_id: Mapped[Optional[str]] = mapped_column(String(50), nullable=True)
+    room: Mapped[Optional[str]] = mapped_column(String(50), nullable=True, index=True)
+    leader_name: Mapped[Optional[str]] = mapped_column(String(150), nullable=True)
+    grade: Mapped[Optional[str]] = mapped_column(String(50), nullable=True)
+    score_real_business: Mapped[Optional[float]] = mapped_column(Float, nullable=True)
+    score_chatbot_rag: Mapped[Optional[float]] = mapped_column(Float, nullable=True)
+    score_database: Mapped[Optional[float]] = mapped_column(Float, nullable=True)
+    score_platform: Mapped[Optional[float]] = mapped_column(Float, nullable=True)
+    score_team_understanding: Mapped[Optional[float]] = mapped_column(Float, nullable=True)
+    score_presentation: Mapped[Optional[float]] = mapped_column(Float, nullable=True)
+    category_scores: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+
     # Relationships
     phase: Mapped["Phase"] = relationship("Phase", back_populates="teams")
     members: Mapped[List["TeamMember"]] = relationship(
